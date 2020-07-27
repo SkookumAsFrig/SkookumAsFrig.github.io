@@ -1,0 +1,50 @@
+I"�<h3 id="project-description">Project Description</h3>
+
+<p>MyPlanLink is a marketplace platform for health insurance providers (aka <em>providers</em> for short) that offers their customers a branded experience to shop, quote, compare, and enroll in a variety of health, dental, and vision products.</p>
+
+<p>The goal was to build a set of web services that this platform could flexibly and safely pass customer enrollment and payment information to which could then submit it to the health insurance providers. This included:</p>
+
+<ul>
+  <li>Tokenization of payment information</li>
+  <li>Reception of enrollment from the platform</li>
+  <li>Transformation from received enrollment into providers’ formats</li>
+  <li>Submission of enrollments and payment information to providers’</li>
+</ul>
+
+<h3 id="contributions">Contributions</h3>
+
+<p>Out of a team of developers, my primary contributions were:</p>
+
+<ul>
+  <li>Payment tokenization and ecryption</li>
+  <li>Test harness for tokenization</li>
+  <li>Submission of enrollments to providers</li>
+</ul>
+
+<h3 id="challenges-overcame">Challenges Overcame</h3>
+
+<p>This was my first experience building something that tokenized and encrypted actual payment information which was a high-security, business-critical task. This involved a variety of encryption techniques and software to accomplish.</p>
+
+<p>The biggest challenge was scalability. For n number of health insurance providers, there can be n number of enrollment submission methods that they themselves require to receive the enrollment, such as:</p>
+
+<ul>
+  <li>E-fax of PDF enrollments</li>
+  <li>Token-protected web APIs with enrollment as custom-formatted in JSON</li>
+  <li>.NET SOAP web services protected with encryption and public keys</li>
+  <li>PDFs sent via FTP for manual processing</li>
+</ul>
+
+<h3 id="accomplishments">Accomplishments</h3>
+
+<p>This was a brand new business venture and a new concept in the development of the federal and state-run marketplaces for the Affordable Healthcare Act.</p>
+
+<p>The skills I developed most were:</p>
+
+<ul>
+  <li>Web service security techniques and standards</li>
+  <li>Scalability</li>
+  <li>Service-oriented architecture focus</li>
+  <li>Encryption and tokenization</li>
+  <li>Working with clients’ technical teams directly</li>
+</ul>
+:ET

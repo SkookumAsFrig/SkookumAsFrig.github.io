@@ -1,0 +1,98 @@
+I"<p>Ah, the ultimate OS for Level 110 Necromancers, or so they say. They say it’s best prodded from afar before taking the plunge. They say a lot of things.</p>
+
+<p>It could be my past six years of LAMP development experience in a corporate environment, but I don’t think Arch lives up to its hyped difficulty.</p>
+
+<p>I initially took the plunge and installed Arch right on my hard drive next to Windows, using their <a href="https://wiki.archlinux.org/index.php/beginners'_guide">beginner’s guide</a>. Most of the installation time is spent learning its glorious innards.</p>
+
+<p>However, I recently had to install Arch Linux on VirtualBox to help reproduce and debug an <a href="https://github.com/gnumdk/lollypop/issues/409">issue I reported</a> for the <a href="https://github.com/gnumdk/lollypop">Lollypop</a> music player. I have compiled the meat of its actual installation process just to prove it’s not the monster people think it is:</p>
+
+<h3 id="pregaming">Pregaming</h3>
+
+<ol>
+  <li>Download and install <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>, and get the <a href="https://www.archlinux.org/download/">Arch ISO</a></li>
+  <li>Create a new VDI in VirtualBox, boot it, select the Arch .iso as the startup disk</li>
+</ol>
+
+<p>Within five seconds, a root shell is born. Beware: When you gaze long into the root shell, the root shell also gazes also into you!</p>
+
+<h3 id="installation">Installation</h3>
+
+<h4 id="initial-preparation-5-min">Initial Preparation (5 min)</h4>
+
+<ol>
+  <li>Verify Internet Connection: <code class="language-plaintext highlighter-rouge">$ ping google.com</code></li>
+  <li>Update System Clock: <code class="language-plaintext highlighter-rouge">$ timedatectl set-ntp true</code></li>
+  <li>Identify the “hard drive”: <code class="language-plaintext highlighter-rouge">$ lsblk</code></li>
+  <li>Open “hard drive” in Parted: <code class="language-plaintext highlighter-rouge">$ parted /dev/sda</code></li>
+  <li>Assign a Label: <code class="language-plaintext highlighter-rouge">$ (parted) mklabel msdos</code></li>
+  <li>Create Partition: <code class="language-plaintext highlighter-rouge">$ (parted) mkpart primary ext4 1M 100%</code></li>
+  <li>Set Boot Flag: <code class="language-plaintext highlighter-rouge">$ (parted) set 1 boot on</code></li>
+  <li>Verify Partition: <code class="language-plaintext highlighter-rouge">$ (parted) print</code></li>
+  <li>Exit Parted: <code class="language-plaintext highlighter-rouge">$ ctrl+C</code></li>
+  <li>Format Partition: <code class="language-plaintext highlighter-rouge">$ mkfs.ext4 /dev/sda1</code></li>
+  <li>Mount Partition: <code class="language-plaintext highlighter-rouge">$ mount /dev/sda1 /mnt</code></li>
+</ol>
+
+<h4 id="package-installation-5-min-of-waiting">Package Installation (5 min of waiting)</h4>
+
+<ol>
+  <li>Install Base Packages: <code class="language-plaintext highlighter-rouge">$ pacstrap -i /mnt base base-devel</code></li>
+  <li>Hit enter, enter, Y</li>
+</ol>
+
+<h4 id="configuration-5-min">Configuration (5 min)</h4>
+
+<ol>
+  <li>Generate fstab: <code class="language-plaintext highlighter-rouge">$ genfstab -U /mnt &gt; /mnt/etc/fstab</code></li>
+  <li>Change to Root in New System: <code class="language-plaintext highlighter-rouge">$ arch-chroot /mnt /bin/bash</code></li>
+  <li>Set Locale: <code class="language-plaintext highlighter-rouge">$ echo "LANG=en_US.UTF-8" &gt; /etc/local.conf</code></li>
+  <li>Download Boot Loader: <code class="language-plaintext highlighter-rouge">$ pacman -S grub os-prober</code></li>
+  <li>Install Boot Loader: <code class="language-plaintext highlighter-rouge">$ grub-install --target=i386-pc --recheck /dev/sda</code></li>
+  <li>Generate Boot Config: <code class="language-plaintext highlighter-rouge">$ grub-mkconfig -o /boot/grub/grub.cfg</code></li>
+  <li>Set Some Hostname: <code class="language-plaintext highlighter-rouge">$ echo "myhostname" &gt; /etc/hostname</code></li>
+  <li>Get NIC Name: <code class="language-plaintext highlighter-rouge">$ ip link</code></li>
+  <li>Autostart Internet Connectivity: <code class="language-plaintext highlighter-rouge">$ systemctl enable dhcpcd@xxx.service</code></li>
+  <li>where <em>xxx</em> is the NIC name from <code class="language-plaintext highlighter-rouge">$ ip link</code></li>
+  <li>Set Root Password: <code class="language-plaintext highlighter-rouge">$ passwd</code></li>
+  <li>Exit New System: <code class="language-plaintext highlighter-rouge">$ exit</code></li>
+  <li>Reboot: <code class="language-plaintext highlighter-rouge">$ reboot</code></li>
+  <li>Select option 3 “Boot existing OS” to boot into Arch</li>
+  <li>Login as root</li>
+</ol>
+
+<h4 id="gui-10-min-mostly-waiting">GUI (10 min, mostly waiting)</h4>
+<ol>
+    <li>Install OpenGL Drivers
+        <ol>
+            <li>Enable Multilib
+                <ol>
+                    <li><code># vi /etc/pacman.conf</code></li>
+                    <li>Uncomment the two multilib lines:
+                        <div class="highlight">
+                            <pre><code class="language-sh" data-lang="sh"><span class="c">#[multilib]</span><br /><span class="c">#Include = /etc/pacman.d/mirrorlist</span></code></pre>
+                        </div>
+                        <p>To:</p>
+                        <div class="highlight">
+                            <pre><code class="language-sh" data-lang="sh"><span class="c">#[multilib]</span><br /><span class="c">#Include = /etc/pacman.d/mirrorlist</span></code></pre>
+                        </div>
+                    </li>
+                </ol>
+            <li>Update Pacman: <code># pacman -Syu</code></li>
+            <li>Install OpenGL: <code># pacman -S mesa-libgl</code></li>
+            <li>Install 32 bit OpenGL: <code># pacman -S lib32-mesa-libgl</code></li>
+        &lt;/ol&gt;
+    </li>
+    <li>Install VirtualBox Guest Utilities: <code># pacman -S virtualbox-guest-utils</code></li>
+    <li>Install Gnome: <code># pacman -S gnome gnome-extra</code>
+        <ol>
+            <li>Hit <code>enter enter enter enter Y</code></li>
+        </ol>
+    </li>
+    <li>Enable GDM: <code># systemctl enable gdm.service</code></li>
+    <li>Install Gnome Tweak Tool: <code># pacman -S gnome-tweak-tool</code></li>
+    <li>The Final Reboot Before Things Become Civilized: <code># reboot</code></li>
+</ol>
+
+And that's all there is to it.
+</li></ol>
+:ET

@@ -30,18 +30,20 @@ header hr.star-primary:after {
 }
 
 header > div.container > div > div > img {
-    width: 300px;
-    border-radius: 150px;
+    height: 300px;
+    /* border-radius: 150px; */
 }
 
 /* About */
 
 section#about hr.star-light:after,
+section#about hr.star-wide:after
 section#about hr.star-primary:after {
     content: "\f11a";
 }
 
 section#about div#interests hr.star-light:after,
+section#about div#interests hr.star-wide:after,
 section#about div#interests hr.star-primary:after {
     content: "\f085";
 }
@@ -54,14 +56,40 @@ section#about div#left p {
   text-align: right;
 }
 
+section#about div#night p {
+  color: #909090;
+}
+
 section#about p a {
   color: #{{ site.color.secondary-light }};
+}
+
+section#about div#history_items p a {
+  color: #757575;
 }
 
 section#about ul  {
   padding: 0;
   margin: 0 0 15px 20px;
   margin-bottom: 15px;
+  text-align: center;
+}
+
+section#about h4  {
+  padding: 0;
+  margin: 0 0 15px 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+section#about li  {
+  list-style-type: none;
+  color: #f2f2f2;
+}
+
+section#about li:nth-child(odd)  {
+  list-style-type: none;
+  color: #757575;
 }
 
 /* Portfolio Grid */

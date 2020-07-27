@@ -1,0 +1,135 @@
+I" <p>I was working on a new Laravel app locally with Homestead, using MySQL. I later decided to use PostgreSQL. This took a bit longer than expected. Here is how I did it.</p>
+
+<ol>
+  <li><a href="#review-homestead">Review Homestead Setup</a></li>
+  <li><a href="#update-config">Update Laravel’s DB Config</a></li>
+  <li><a href="#recreate-database">Recreate the Database in PostgreSQL</a></li>
+  <li><a href="#recreate-data">Recreate the Database Tables and Data</a></li>
+  <li><a href="#install-client">Optional: Install a PostgreSQL client</a></li>
+</ol>
+
+<p><a name="review-homestead"></a></p>
+
+<h2 id="review-homestead-setup">Review Homestead Setup</h2>
+
+<p>First things first, I already had this app in the works, and was already running it with <a href="https://laravel.com/docs/5.6/homestead">Homestead</a>, and MySQL. I already had data seeded to the database too.</p>
+
+<p>Homestead was setup to run separately from my app’s repository. The folders/site config in <code class="language-plaintext highlighter-rouge">Homestead.yaml</code> looks like this:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">ip</span><span class="pi">:</span> <span class="s2">"</span><span class="s">192.168.10.10"</span>
+<span class="na">memory</span><span class="pi">:</span> <span class="m">2048</span>
+<span class="na">cpus</span><span class="pi">:</span> <span class="m">1</span>
+<span class="na">provider</span><span class="pi">:</span> <span class="s">virtualbox</span>
+
+<span class="na">authorize</span><span class="pi">:</span> <span class="s">~/.ssh/id_rsa.pub</span>
+
+<span class="na">keys</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">~/.ssh/id_rsa</span>
+
+<span class="na">folders</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">map</span><span class="pi">:</span> <span class="s">~/projects/laravel-forum</span>
+      <span class="na">to</span><span class="pi">:</span> <span class="s">/home/vagrant/projects/laravel-forum</span>
+<span class="na">sites</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">map</span><span class="pi">:</span> <span class="s">forum.local</span>
+      <span class="na">to</span><span class="pi">:</span> <span class="s">/home/vagrant/projects/laravel-forum/public</span>
+
+<span class="na">databases</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">homestead</span>
+</code></pre></div></div>
+
+<p>One thing to note here is that, by default, Homestead will forward the default <code class="language-plaintext highlighter-rouge">5432</code> PostgreSQL port to <code class="language-plaintext highlighter-rouge">54320</code> on the host machine. This will come in handy later when you try to connect to it with SQL client from the host machine.</p>
+
+<p><a name="update-config"></a></p>
+
+<h2 id="update-laravels-db-config">Update Laravel’s DB Config</h2>
+
+<p>Modify the Laravel project’s <code class="language-plaintext highlighter-rouge">/.env</code> environment file in the project root to use the PostgreSQL instance that’s already in the Homestead VM.</p>
+
+<p>Change this:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">DB_CONNECTION=mysql</span>
+<span class="s">DB_HOST=127.0.0.1</span>
+<span class="s">DB_PORT=3306</span>
+<span class="s">DB_DATABASE=forum</span>
+<span class="s">DB_USERNAME=homestead</span>
+<span class="s">DB_PASSWORD=secret</span>
+</code></pre></div></div>
+
+<p>to this:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">DB_CONNECTION=pgsql</span>
+<span class="s">DB_HOST=127.0.0.1</span>
+<span class="s">DB_PORT=5432</span>
+<span class="s">DB_DATABASE=forum</span>
+<span class="s">DB_USERNAME=homestead</span>
+<span class="s">DB_PASSWORD=secret</span>
+</code></pre></div></div>
+
+<p>After refreshing the Laravel app in the browser, it will now show a database not found error, proving the configuration change worked.</p>
+
+<p><a name="recreate-database"></a></p>
+
+<h2 id="recreate-the-database-in-postgresql">Recreate the database in PostgreSQL</h2>
+
+<p>Since Laravel’s database migrations do not handle creation of the actual databases, this step has to be handled manually.</p>
+
+<p>Login to Homestead’s virtual machine:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vagrant ssh
+</code></pre></div></div>
+
+<p>From inside the VM where PostgreSQL is already setup, login to its command line binary:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>psql <span class="nt">-U</span> homestead <span class="nt">-h</span> localhost
+</code></pre></div></div>
+
+<p>That <code class="language-plaintext highlighter-rouge">homestead</code> username is what was setup in Laravel’s <code class="language-plaintext highlighter-rouge">.env</code> file, but more importantly, that’s the default username that comes with Homestead. The default password is <code class="language-plaintext highlighter-rouge">secret</code>.</p>
+
+<p>A PostgreSQL command line is then displayed where queries and SQL can be run:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>psql <span class="o">(</span>9.5.10<span class="o">)</span>
+SSL connection <span class="o">(</span>protocol: TLSv1.2, cipher: ECDHE-RSA-AES256-GCM-SHA384, bits: 256, compression: off<span class="o">)</span>
+Type <span class="s2">"help"</span> <span class="k">for </span>help.
+
+<span class="nv">homestead</span><span class="o">=</span><span class="c">#</span>
+</code></pre></div></div>
+
+<p>Create the database. In my case, I only had one database called <code class="language-plaintext highlighter-rouge">forum</code>:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">homestead</span><span class="o">=</span><span class="c"># create database forum;</span>
+</code></pre></div></div>
+
+<p>After refreshing the Laravel app in the browser again, it will now show some table not found error, proving the database was created successfully.</p>
+
+<p>Type <code class="language-plaintext highlighter-rouge">\q</code> to logout of psql, and then <code class="language-plaintext highlighter-rouge">exit</code> to log out of Homestead.</p>
+
+<p><a name="recreate-data"></a></p>
+
+<h2 id="recreate-the-database-tables-and-data">Recreate the Database Tables and Data</h2>
+
+<p>With MySQL, I did not manually touch the data directly or with <code class="language-plaintext highlighter-rouge">php artisan tinker</code>, but instead used migrations and database seeds from the start. The seeds are default Laravel seeder classes that use the built in factories and <code class="language-plaintext highlighter-rouge">faker</code>.</p>
+
+<p>So all I had to do was rerun the migrations and seeds with:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>php artisan migrate:refresh <span class="nt">--seed</span>
+</code></pre></div></div>
+
+<p>At this point, the Laravel app was again fully functional upon browser refreshing and was now running from PostgreSQL.</p>
+
+<p><a name="install-client"></a></p>
+
+<h2 id="optional-install-a-postgresql-client">Optional: Install a PostgreSQL client</h2>
+
+<p>As nice as the <code class="language-plaintext highlighter-rouge">psql</code> command line seems, I prefer using a GUI SQL client to quickly view and scan the data. Since I’m on Arch Linux, I was already using TeamSQL as my SQL GUI client.</p>
+
+<p>Although Homestead uses PostgreSQL’s default <code class="language-plaintext highlighter-rouge">5432</code> inside the virtual machine, it forwards to <code class="language-plaintext highlighter-rouge">54320</code>, which is what has to be used for a SQL GUI client to connect from the host to the PostgreSQL instance inside the VM guest.</p>
+
+<p>The connection info is:</p>
+
+<ul>
+  <li>Host: localhost</li>
+  <li>Port: 54320</li>
+  <li>Username: homestead</li>
+  <li>Password: secret</li>
+</ul>
+:ET
