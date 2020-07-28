@@ -46,20 +46,21 @@ about:
           - item: Machining and Welding (5)
           - item: 3D Printing (8)
           - item: Electro-Mechanical Integration (8)
+          - item: Battery Design (5)
           - item: Electrical/ICE Vehicle Systems Design (5)
           - item: Robotics Systems Design (8)
           - item: Design Evaluation and Methodology (5)
-          - item: GD & T (4)
+          - item: GD&T (4)
       center:
         header: Software
         list:
-          - item: C/C++ (5)
-          - item: Embedded Systems (4)
           - item: Python (5)
+          - item: C/C++ (5)
           - item: Verilog (2)
-          - item: PLC Ladder Logic (2)
-          - item: Java (2)
           - item: Linux (3)
+          - item: Embedded Systems (4)
+          - item: Java (2)
+          - item: PLC Ladder Logic (2)
           - item: ROS (2)
           - item: Robotics Algorithms (2)
           - item: Optimal Control Algorithms (3)
@@ -68,7 +69,7 @@ about:
       right:
         header: Misc
         list:
-          - item: Mandarin (Native Proficiency, Bilingual Technical Communications)
+          - item: Mandarin (Native Proficiency)
           - item: Spanish (Limited Working Proficiency)
           - item: Financial Statement Analysis (1)
   button:
@@ -95,11 +96,11 @@ google_analytics_tracker_id:
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 101010 #80B3FF
+  primary: 1f1f1f #80B3FF
   primary-rgb: "255,0,0" #"128,179,255"
   secondary-light: 58635a #FD6E8A
   secondary: 38433a #FD6E8A
-  secondary-dark: 18231a #A2122F
+  secondary-dark: 101010 #A2122F
   blog-text: 222
   link: 1a77bd
 

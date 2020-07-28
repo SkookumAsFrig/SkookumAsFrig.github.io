@@ -57,7 +57,7 @@ section#about div#left p {
 }
 
 section#about div#night p {
-  color: #909090;
+  color: #999999;
 }
 
 section#about p a {
@@ -65,7 +65,7 @@ section#about p a {
 }
 
 section#about div#history_items p a {
-  color: #757575;
+  color: #999999;
 }
 
 section#about ul  {
@@ -89,7 +89,7 @@ section#about li  {
 
 section#about li:nth-child(odd)  {
   list-style-type: none;
-  color: #757575;
+  color: #999999;
 }
 
 /* Portfolio Grid */
