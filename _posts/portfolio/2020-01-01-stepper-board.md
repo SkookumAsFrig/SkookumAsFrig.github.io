@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Cigna Quoting and Enrollment Portals
+title: QUAD-STEPPER POWER BOARD WITH MONITORING
 category: portfolio
 modal-id: 1
 vid1: null
 vid2: null
-img: cigna.png
-img2: cigna.png
-img3: cigna.png
-img4: cigna.png
+img: Stepper_Board/board_pic.jpg
+img2: Stepper_Board/final_baord.png
+img3: Stepper_Board/final_baord2.png
+img4: Stepper_Board/assembled_product.jpg
 alt: Cigna home page
 client: Cigna
 application: Broker, Enrollment, and Quoting Portals
