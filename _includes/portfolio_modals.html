@@ -13,6 +13,9 @@
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
+                            <ul class="list-inline item-details">
+                                <li><strong>{{ site.portfolio.labels.project-date }}:</strong> {{ post.project-date }}</li>
+                            </ul>
                             {% if post.vid1 != null %}
                                 {{ post.vid1 }}
                             {% endif  %}
@@ -22,56 +25,35 @@
                             <img src="img/portfolio/{{ post.img2 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                             <img src="img/portfolio/{{ post.img3 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                             <img src="img/portfolio/{{ post.img4 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                            <ul class="list-inline item-details">
-                                <li><strong>{{ site.portfolio.labels.client }}:</strong> {{ post.client }}</li>
-                                <li><strong>{{ site.portfolio.labels.project-date }}:</strong> {{ post.project-date }}</li>
-                                <br/>
-                				<li>
-                                    <strong>
-                                        {% assign is_multiple_apps = post.application | split: "," | size %}
-                						{% if is_multiple_apps > 1  %}
-                                            {{ site.portfolio.labels.application }}s:
-                                        {% else %} 
-                                            {{ site.portfolio.labels.application }}:
-                                        {% endif  %}
-                                    </strong>
-                                     {{ post.application }}
-                                </li>
-                            </ul>
-                            <div class="entry text-left">
-                                {{ post.content }}
-                            </div>
+                            <img src="img/portfolio/{{ post.img5 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                             <div class="skills">
                                 <div class="text-center">
                                     <h3>Skills Used</h3>
                                     <hr class="star-light">
                                 </div>
                                 <div class="row">
-                                    <div class="skill col-md-3 top-buffer">
-                                        <h5>{{ site.portfolio.labels.languages }}</h5>
-                                        <ul>
-                                            <li>{{ post.languages | join: '</li><li>'}}</li>
-                                        </ul>
-                                    </div>
-                                    <div class="skill col-md-3 top-buffer">
+                                    <div class="skill col-md-4 top-buffer">
                                         <h5>{{ site.portfolio.labels.concepts }}</h5>
                                         <ul>
                                             <li>{{ post.concepts | join: '</li><li>'}}</li>
                                         </ul>
                                     </div>
-                                    <div class="skill col-md-3 top-buffer">
+                                    <div class="skill col-md-4 top-buffer">
                                         <h5>{{ site.portfolio.labels.tools }}</h5>
                                         <ul>
                                             <li>{{ post.tools | join: '</li><li>'}}</li>
                                         </ul>
                                     </div>
-                                    <div class="skill col-md-3 top-buffer">
-                                        <h5>{{ site.portfolio.labels.stack }}</h5>
+                                    <div class="skill col-md-4 top-buffer">
+                                        <h5>{{ site.portfolio.labels.languages }}</h5>
                                         <ul>
-                                            <li>{{ post.stack | join: '</li><li>'}}</li>
+                                            <li>{{ post.languages | join: '</li><li>'}}</li>
                                         </ul>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="entry text-left">
+                                {{ post.content }}
                             </div>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{ site.portfolio.labels.modal-close }}</button>
                         </div>

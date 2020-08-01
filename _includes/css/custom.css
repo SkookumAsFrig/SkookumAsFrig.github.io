@@ -71,14 +71,14 @@ section#about div#history_items p a {
 
 section#about ul  {
   padding: 0;
-  margin: 0 0 15px 20px;
+  margin: 0 0 15px 0;
   margin-bottom: 15px;
   text-align: center;
 }
 
 section#about h4  {
   padding: 0;
-  margin: 0 0 15px 20px;
+  margin: 0 0 15px 0;
   margin-bottom: 15px;
   text-align: center;
 }
@@ -184,17 +184,31 @@ section.port_grid {
 
 .portfolio-modal .skills h5 {
   margin: 0 0 13px 0;
-  text-align: left;
+  text-align: center;
 }
 
 .portfolio-modal .skills ul {
   padding: 0px;
-  margin: 0 0 0 18px;
+  margin: 0 0 0 0;
 }
 
 .portfolio-modal .skills ul li {
-  text-align: left;
+  text-align: center;
   padding: 3px 0;
+}
+
+.portfolio-modal div[class='entry text-left']{
+  padding-bottom: 50px;
+}
+
+.portfolio-modal li  {
+  list-style-type: none;
+  color: #7a7a7a;
+}
+
+.portfolio-modal li:nth-child(odd)  {
+  list-style-type: none;
+  color: #{{ site.color.primary }};
 }
 
 .portfolio-modal .skills hr.star-light {

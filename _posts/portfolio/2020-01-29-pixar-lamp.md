@@ -9,6 +9,7 @@ img: Pixar_Lamp/image-asset.jpeg
 img2: Pixar_Lamp/label_comb.jpg
 img3: Pixar_Lamp/circuit.jpg
 img4: Pixar_Lamp/explodedview.jpg
+img5: Pixar_Lamp/explodedview.jpg
 alt: Cigna home page
 client: Cigna
 application: Broker, Enrollment, and Quoting Portals
