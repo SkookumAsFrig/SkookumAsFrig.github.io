@@ -6,9 +6,9 @@ modal-id: 3
 vid1: <div class="video-container"> <iframe class="video" src="https://www.youtube.com/embed/wWRPxG7BYHI" allowfullscreen></iframe> </div>
 vid2: <div class="video-container"> <iframe class="video" src="https://www.youtube.com/embed/BmQvYnkPvnc" allowfullscreen></iframe> </div>
 img: Pixar_Lamp/image-asset.jpeg
-img2: Pixar_Lamp/label_comb.jpg
-img3: Pixar_Lamp/circuit.jpg
-img4: Pixar_Lamp/explodedview.jpg
+img2: Pixar_Lamp/slide.png
+img3: Pixar_Lamp/label_comb.jpg
+img4: Pixar_Lamp/circuit.jpg
 img5: Pixar_Lamp/explodedview.jpg
 project-date: 2019
 languages:
@@ -31,4 +31,4 @@ In this project, my partner and I built both the hardware and software for a soc
 
 ### Challenges and Accomplishments
 
-This project was done on a tight timeline of 6 weeks. There were many functionalities that had to be built from the ground up, such as motion control, face tracking, and interactive behavior. This was made more difficult by the fact that the computation was heavily restricted to a Raspberry Pi. Our development process consisted of building each modular function separately and tested in an isolated routine, then integrating the functionalities one-by-one. In the end, we built a multi-threaded python application, structured like an operating system to simultaneously handle multiple external signals. In terms of hardware, it was all custom built, and thankfully most of the robot arm was available from another ongoing project. However, it still required some design ingenuity to package the components elegantly, and for the entire module to come together as an interactive display. The website that we built to summarize the project in report form can be found <a href="https://courses.ece.cornell.edu/ece5990/ECE5725_Fall2019_Projects/Dec_04_Demo/Pixar_Lamp/Website/index.html#">here</a>.
+This project was done on a tight timeline of 6 weeks. There were many functionalities that had to be built from the ground up, such as motion control, face tracking, and interactive behavior. This was made more difficult by the fact that the computation was heavily restricted to a Raspberry Pi. Our development process consisted of building each modular function separately and tested in an isolated routine, then integrating the functionalities one-by-one. In the end, we built a multi-threaded python application, structured like an operating system to simultaneously handle multiple external signals. In terms of hardware, it was all custom built, and thankfully most of the robot arm was available from another ongoing project. However, it still required some design ingenuity to package the components elegantly, and for the entire module to come together as an interactive display. The website that we built to summarize the project in report form can be found <a href="https://courses.ece.cornell.edu/ece5990/ECE5725_Fall2019_Projects/Dec_04_Demo/Pixar_Lamp/Website/index.html#" target="_blank">here</a>.

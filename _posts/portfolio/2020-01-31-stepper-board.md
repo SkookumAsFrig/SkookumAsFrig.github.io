@@ -9,7 +9,7 @@ img: Stepper_Board/board_pic.jpg
 img2: Stepper_Board/final_baord.png
 img3: Stepper_Board/final_baord2.png
 img4: Stepper_Board/assembled_product.jpg
-img5: Stepper_Board/assembled_product.jpg
+img5: Stepper_Board/layers.png
 alt: 
 client: null
 project-date: 2019-2020
