@@ -914,8 +914,10 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
 
   Modal.prototype.hide = function (e) {
     if (e) e.preventDefault()
-
+    
     e = $.Event('hide.bs.modal')
+
+    alert(this.)
 
     this.$element.trigger(e)
 

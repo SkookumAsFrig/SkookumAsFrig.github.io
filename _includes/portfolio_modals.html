@@ -1,6 +1,6 @@
 {% for post in site.categories['portfolio'] %}
     <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
+        <div class="modal-content" id="port_content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
@@ -55,7 +55,8 @@
                             <div class="entry text-left">
                                 {{ post.content }}
                             </div>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{ site.portfolio.labels.modal-close }}</button>
+                            <button type="button" class="btn btn-default" id="vid-{{ post.modal-id }}" data-dismiss="modal">
+                                <i class="fa fa-times"></i> {{ site.portfolio.labels.modal-close }}</button>
                         </div>
                     </div>
                 </div>

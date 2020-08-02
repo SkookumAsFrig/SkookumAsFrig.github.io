@@ -10,72 +10,25 @@ img2: Pixar_Lamp/label_comb.jpg
 img3: Pixar_Lamp/circuit.jpg
 img4: Pixar_Lamp/explodedview.jpg
 img5: Pixar_Lamp/explodedview.jpg
-alt: Cigna home page
-client: Cigna
-application: Broker, Enrollment, and Quoting Portals
-project-date: 2010 - 2012
+project-date: 2019
 languages:
-- PHP
-- SQL
-- HTML/CSS
-- JavaScript
-- XML
+- C++
+- Python
 concepts:
-- MVC
-- AJAX
-- OOP
-- Web Services
+- Human Robot Interaction
+- Computer Vision
+- Robot Manipulators
+- Electrical Design
 tools:
-- MVC Framework
-- Prototype
-- Pdflib
-- Dimensions (VCS)
-stack:
+- Autodesk Inventor
 - Linux
-- Apache
-- MySQL
-- PHP
-- DB2
+- Open CV
 ---
 
 ### Project Description
 
-Cigna had four web applications to facilitate sales of health and dental insurance
+In this project, my partner and I built both the hardware and software for a social robot inspired by Pixar Animation Studio’s Luxo Jr.. For the base robot arm, we used the open-source mini 6-DOF manipulator platform that we developed (for Master of Engineering project). The end-effector, which contains both the lamp and a Raspberry Pi camera, was custom designed and manufactured for this project. To achieve organic behavior, we implemented face-detection and tracking algorithms on the Raspberry Pi 3B+. In addition, we implemented teach and replay algorithms to train the robot arm for movement routines, in order to quickly and easily achieve sophisticated motion. Overall we were successful and created a robot that is lively and interacts with humans in its surroundings, powered by a resource-restricted embedded device.
 
-- **Broker Portal** - Agents sell policies, run quotes, and view commissions data
-- **Quoting Portal** - Individuals get quotes for health & dental coverage
-- **Enrollment Portal** - Individuals enroll in health & dental policies
-- **Member Portal** - Members view benefits, make payments, and track claims
+### Challenges and Accomplishments
 
-### Contributions
-My work with Cigna's portals spanned three years, driven largely by new feature requests:
-
-- Support for quoting dental products across ten states
-- Add and terminate health products across ten states for quoting & enrollment
-- Overhaul the billing calculations and layout for members
-- Modify PDF proposals generated with PDFlib
-
-I also created a bulk premium rating tool that allows internal rate analysts to run large data sets through uploadable spreadsheets to test their own quote rating engines.
-
-### Challenges Overcame
-
-This period marked a lot of growth for me as a junior web developer coming from a startup company, getting my feet wet with enterprise-level web applications. 
-
-The biggest challenges I faced were mostly enterprise firsts:
-
-- Absorb the vast business domain of health & related insurance
-- Implement DB2 cursors to facilitate server-side pagination in result sets
-- Write design and test documents
-- Collaborate on teams of business analysts, project managers, and QA
-
-There were also technical challenges where I was in over my head:
-
-- Learn an in-house-built MVC framework, also my first MVC framework
-- Map values to PDFs proposals using complex XMLs
-- Work with AJAX using Prototype to call premium rating web services
-
-### Accomplishments
-
-My biggest personal accomplishment was conquering the huge learning curve of domain knowledge and enterprise exposure as a junior developer.
-
-My longest lasting accomplishment is the previously-mentioned bulk premium rating tool, which is still in use today and continues to save countless hours for an entire team of rate analysts.
+This project was done on a tight timeline of 6 weeks. There were many functionalities that had to be built from the ground up, such as motion control, face tracking, and interactive behavior. This was made more difficult by the fact that the computation was heavily restricted to a Raspberry Pi. Our development process consisted of building each modular function separately and tested in an isolated routine, then integrating the functionalities one-by-one. In the end, we built a multi-threaded python application, structured like an operating system to simultaneously handle multiple external signals. In terms of hardware, it was all custom built, and thankfully most of the robot arm was available from another ongoing project. However, it still required some design ingenuity to package the components elegantly, and for the entire module to come together as an interactive display. The website that we built to summarize the project in report form can be found <a href="https://courses.ece.cornell.edu/ece5990/ECE5725_Fall2019_Projects/Dec_04_Demo/Pixar_Lamp/Website/index.html#">here</a>.
