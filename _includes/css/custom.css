@@ -144,6 +144,10 @@ section.port_grid {
   border: 0;
 }
 
+.port_caption {
+  font-size: 17px;
+}
+
 .portfolio-modal hr.star-primary:after {
   content: "\f0b1";
 }
