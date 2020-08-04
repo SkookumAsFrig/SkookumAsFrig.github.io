@@ -1,8 +1,0 @@
-I"Ê<h3 id="project-description">Project Description</h3>
-
-<p>Master of Engineering project, an open source custom mobile robot platform, with Nvidia Jetson Nano, Intel Altera DE-10 Nano, and Xilinx Ultra96 Compute platforms to achieve high speed SLAM and vision based pick-and-place functionalities. Also equipped with a SLAMTEC A1M8 2D Lidar and front/rear cameras.</p>
-
-<h3 id="challenges-and-accomplishments">Challenges and Accomplishments</h3>
-
-<p>In addition to all the technical challenges of developing a power-dense, small-form-factor, stepper-driven robot with intelligent abilities from scratch, this project also entailed leading a team of four other engineers. This required weekly meetings, task delegations, extensive planning and integration of design progress. The effort combined mechanical, electrical and software engineering into a usable final product. While the software portion is still under development, the hardware aspect is mostly complete.</p>
-:ET
