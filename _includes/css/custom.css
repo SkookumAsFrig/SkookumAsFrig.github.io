@@ -250,9 +250,9 @@ section#blog div.blog-item:hover{
 }
 
 section#blog div.blog-item{
-  -webkit-transition: all ease .2s;
-  -moz-transition: all ease .2s;
-  transition: all ease .2s;
+  -webkit-transition: all ease .1s;
+  -moz-transition: all ease .1s;
+  transition: all ease .1s;
 }
 
 section#blog div.blog-item p{

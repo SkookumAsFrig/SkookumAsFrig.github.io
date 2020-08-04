@@ -137,16 +137,16 @@ header .intro-text .skills {
 @media(min-width:768px) {
     .navbar-fixed-top {
         padding: 20px 0;
-        -webkit-transition: padding .05s;
-        -moz-transition: padding .05s;
-        transition: padding .05s;
+        -webkit-transition: padding .1s;
+        -moz-transition: padding .1s;
+        transition: padding .1s;
     }
 
     .navbar-fixed-top .navbar-brand {
         font-size: 2em;
-        -webkit-transition: all .05s;
-        -moz-transition: all .05s;
-        transition: all .05s;
+        -webkit-transition: all .1s;
+        -moz-transition: all .1s;
+        transition: all .1s;
     }
 
     .navbar-fixed-top.navbar-shrink {
@@ -223,9 +223,9 @@ section.success {
     height: 100%;
     opacity: 0;
     background: rgba({{ site.color.primary-rgb }},.9);
-    -webkit-transition: all ease .2s;
-    -moz-transition: all ease .2s;
-    transition: all ease .2s;
+    -webkit-transition: all ease .1s;
+    -moz-transition: all ease .1s;
+    transition: all ease .1s;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
@@ -268,7 +268,7 @@ section.success {
     font-size: 20px;
     color: #fff;
     background: 0 0;
-    transition: all .3s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
 .btn-outline:hover,
@@ -312,10 +312,10 @@ section.success {
     vertical-align: middle;
     vertical-align: baseline;
     opacity: 0;
-    -webkit-transition: top .15s ease,opacity .15s ease;
-    -moz-transition: top .15s ease,opacity .15s ease;
-    -ms-transition: top .15s ease,opacity .15s ease;
-    transition: top .15s ease,opacity .15s ease;
+    -webkit-transition: top .1s ease,opacity .1s ease;
+    -moz-transition: top .1s ease,opacity .1s ease;
+    -ms-transition: top .1s ease,opacity .1s ease;
+    transition: top .1s ease,opacity .1s ease;
 }
 
 .floating-label-form-group::not(:first-child) {
