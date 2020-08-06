@@ -59,9 +59,11 @@ function showSlides(n) {
 
   var $this = $('.slideshow-container').find('iframe');
   $this.each(function(index){
-      var tempSrc = $(this).attr('src');
-      $(this).attr('src', "");
-      $(this).attr('src', tempSrc);
+    if (index != (slideIndex-1)){
+        var tempSrc = $(this).attr('src');
+        $(this).attr('src', "");
+        $(this).attr('src', tempSrc);
+    }
   });
 }
 
@@ -95,9 +97,11 @@ function showSlides2(n) {
 
   var $this = $('.slideshow-container2').find('iframe');
   $this.each(function(index){
+    if (index != (slideIndex-1)){
       var tempSrc = $(this).attr('src');
       $(this).attr('src', "");
       $(this).attr('src', tempSrc);
+    }
   });
 }
 
@@ -131,8 +135,10 @@ function showSlides3(n) {
 
   var $this = $('.slideshow-container3').find('iframe');
   $this.each(function(index){
+    if (index != (slideIndex-1)){
       var tempSrc = $(this).attr('src');
       $(this).attr('src', "");
       $(this).attr('src', tempSrc);
+    }
   });
 }
