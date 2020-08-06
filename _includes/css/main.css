@@ -312,10 +312,10 @@ section.success {
     vertical-align: middle;
     vertical-align: baseline;
     opacity: 0;
-    -webkit-transition: top .1s ease,opacity .1s ease;
-    -moz-transition: top .1s ease,opacity .1s ease;
-    -ms-transition: top .1s ease,opacity .1s ease;
-    transition: top .1s ease,opacity .1s ease;
+    -webkit-transition: top .1s linear,opacity .1s linear;
+    -moz-transition: top .1s linear,opacity .1s linear;
+    -ms-transition: top .1s linear,opacity .1s linear;
+    transition: top .1s linear,opacity .1s linear;
 }
 
 .floating-label-form-group::not(:first-child) {
