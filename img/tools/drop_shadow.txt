@@ -1,0 +1,2 @@
+http://thenewcode.com/600/Creating-a-True-CrossBrowser-Drop-Shadow-Effect-With-CSS3-&-SVG
+https://stackoverflow.com/questions/3186688/drop-shadow-for-png-image-in-css
