@@ -62,6 +62,7 @@ about:
           - item: Java (2)
           - item: PLC Ladder Logic (2)
           - item: ROS (2)
+          - item: HTML/CSS/Javascript (1)
           - item: Robotics Algorithms (2)
           - item: Optimal Control Algorithms (3)
           - item: Machine Learning Algorithms/Frameworks (2)
@@ -72,6 +73,40 @@ about:
           - item: Mandarin (Native Proficiency)
           - item: Spanish (Limited Working Proficiency)
           - item: Financial Statement Analysis (1)
+  tools:
+    header: Tools I Use
+    list:
+      - logo: <img src="img/tools/catia.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/solidworks.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/nx.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/inventor.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/enovia.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/fusion.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/ansys.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/altium.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/eagle.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/autocadelectrical.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/simplify.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/python.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/cpp.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/ros.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/tf.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/pytorch.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/cuda.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/ubuntu.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/rpi.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/xilinx.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/intel_fpga.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/matlab.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/keil.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/atmelstudio.jpg" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/mplabx.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/arduino.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/rslogix.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/ps.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/premiere.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/maya.png" class="img-responsive img-centered shadowed">
+      
   button:
     text: Download My Resume
     href: /resume/kss223_resume.pdf

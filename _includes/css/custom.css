@@ -25,6 +25,7 @@ code {
 /* Home */
 
 header hr.star-light:after,
+header hr.star-wide:after,
 header hr.star-primary:after {
     content: "\f121";
 }
@@ -38,14 +39,12 @@ header > div.container > div > div > img {
 /* About */
 
 section#about hr.star-light:after,
-section#about hr.star-wide:after
 section#about hr.star-primary:after {
-    content: "\f11a";
+    content: "\f118";
 }
 
-section#about div#interests hr.star-light:after,
 section#about div#interests hr.star-wide:after,
-section#about div#interests hr.star-primary:after {
+section#about hr.star-narrow:after {
     content: "\f085";
 }
 
@@ -640,4 +639,15 @@ pre.highlight {
 
 .dot3_active, .dot3:hover {
   background-color: #717171;
+}
+
+.shadowed {
+  max-height: 100px;
+  margin-top: 40px;
+  top: 50%;
+  transform: translate(0, -50%);
+	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#fff')";
+	filter: url(#drop-shadow);
+	-webkit-filter: drop-shadow(0px 0px 12px rgba(255, 255, 255, 1));
+	filter: drop-shadow(0px 0px 12px rgba(255, 255, 255, 1));
 }

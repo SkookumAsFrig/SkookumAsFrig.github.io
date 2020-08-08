@@ -91,6 +91,26 @@
                     </ul>
                 </div>
             </div>
+            <div class="container"></div>
+                <div class="row" id="tools">
+                    <div class="col-lg-12 text-center">
+                        <h3>{{ site.about.tools.header }}</h3>
+                        <hr class="star-narrow">
+                    </div>
+                </div>
+                {% for item in site.about.tools.list %}
+                    <div class="col-md-2 col-xs-2">
+                        {{ item.logo }}
+                    </div>
+
+                    {% assign loopindex = forloop.index | modulo: 6 %}
+                    {% if loopindex == 0 %}
+                    </div>
+                    <div class="container">
+                    {% endif%}
+
+                {% endfor %}
+            </div>
             <div class="row">
                 <div class="col-xs-8 col-xs-offset-2 text-center">
                     <a href="{{ site.about.button.href }}" class="btn btn-lg btn-outline">

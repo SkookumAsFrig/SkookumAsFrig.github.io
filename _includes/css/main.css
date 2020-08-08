@@ -55,10 +55,20 @@ hr.star-wide {
     text-align: center;
 }
 
+hr.star-narrow {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+}
+
 hr.star-light:after,
 hr.star-primary:after,
-hr.star-wide:after {
-    content: "\f005";
+hr.star-wide:after,
+hr.star-narrow:after {
+    /* content: "\f005"; */
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -68,11 +78,14 @@ hr.star-wide:after {
 }
 
 hr.star-light,
-hr.star-wide {
+hr.star-wide,
+hr.star-narrow {
     border-color: #fff;
 }
 
-hr.star-light:after {
+hr.star-light:after,
+hr.star-wide:after,
+hr.star-narrow:after {
     color: #fff;
     background-color: #{{ site.color.primary }};
 }
