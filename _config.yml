@@ -24,10 +24,10 @@ about:
       center:
         header: Past
         list:
-          - item: GAC Automotive Engineering Institute
-          - item: Tesla, Motor Design Team
-          - item: Tesla, Power Electronics Test Team
           - item: Uber ATG, Modules Team
+          - item: Tesla, Power Electronics Test Team
+          - item: Tesla, Motor Design Team
+          - item: GAC Automotive Engineering Institute
       right:
         header: Present
         list:
@@ -72,7 +72,7 @@ about:
         list:
           - item: Mandarin (Native Proficiency)
           - item: Spanish (Limited Working Proficiency)
-          - item: Financial Statement Analysis (1)
+          - item: Financial Analysis (1)
   tools:
     header: Tools I Use
     list:
