@@ -1,0 +1,37 @@
+I"c
+<h3 id="project-description">Project Description</h3>
+
+<p>The robot is an iRobot Create with an Intel Realsense RGBD camera, and the normal iRobot suite of sensors (odometry, bump, wheel drop).</p>
+
+<p>The robot is placed in one of k possible initial positions, with arbitrary orientation. The robot is tasked with:</p>
+
+<p>Localizing itself</p>
+
+<p>Determining which of the optional walls are actually in the environment and produce an actual map</p>
+
+<p>Navigating to as many of the given waypoints as possible</p>
+
+<p>No overhead localization is provided during competition, so the robot must navigate the environment “blind”.</p>
+
+<p>The team’s score for the competition is calculated as follows:</p>
+
+<p>10 points for each correct waypoint visited</p>
+
+<p>20 points for each correct ECwaypoint visited</p>
+
+<p>-5 points every time the robot indicates incorrectly that it is at a waypoint</p>
+
+<p>10 points for each optional wall that is correctly determined (is in the workspace or not)</p>
+
+<p>-10 points for each optional wall that is incorrectly determined (no points are deducted for optional walls that have not been determined)</p>
+
+<p>10*(time limit (minutes) - actual time(minutes)) if all waypoints and ECwaypoints are visited before time runs out</p>
+
+<p>up to 20 points for creative and innovative solution</p>
+
+<p>Our team scored 80 points (90 if you count the first beacon, we did not beep for it because we thought it was obvious).</p>
+
+<h3 id="challenges-and-accomplishments">Challenges and Accomplishments</h3>
+
+<p>This project was done on a tight timeline of 4 weeks. There were many functionalities that had to be built from the ground up, such as motion control, face tracking, and interactive behavior. This was made more difficult by the fact that the computation was heavily restricted to a Raspberry Pi. Our development process consisted of building each modular function separately and tested in an isolated routine, then integrating the functionalities one-by-one. In the end, we built a multi-threaded python application, structured like an operating system to simultaneously handle multiple external signals. In terms of hardware, it was all custom built, and thankfully most of the robot arm was available from another ongoing project. However, it still required some design ingenuity to package the components elegantly, and for the entire module to come together as an interactive display. The website that we built to summarize the project in report form can be found <a href="https://courses.ece.cornell.edu/ece5990/ECE5725_Fall2019_Projects/Dec_04_Demo/Pixar_Lamp/Website/index.html#" target="_blank">here</a>.</p>
+:ET

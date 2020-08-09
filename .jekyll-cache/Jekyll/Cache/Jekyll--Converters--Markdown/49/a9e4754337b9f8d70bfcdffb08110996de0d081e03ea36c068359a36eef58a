@@ -1,0 +1,34 @@
+I".<h3 id="project-description">Project Description</h3>
+
+<p>The robot is an iRobot Create with an Intel Realsense RGBD camera, and the normal iRobot suite of sensors (odometry, bump, wheel drop).</p>
+
+<p>The robot is placed in one of k possible initial positions, with arbitrary orientation. The robot is tasked with:</p>
+
+<p>• Localizing itself</p>
+
+<p>• Determining which of the optional walls are actually in the environment and produce an actual map</p>
+
+<p>• Navigating to as many of the given waypoints as possible</p>
+
+<p>• No overhead localization is provided during competition, so the robot must navigate the environment “blind”.</p>
+
+<p>The team’s score for the competition is calculated as follows:</p>
+
+<p>• 10 points for each correct waypoint visited</p>
+
+<p>• 20 points for each correct ECwaypoint visited</p>
+
+<p>• -5 points every time the robot indicates incorrectly that it is at a waypoint</p>
+
+<p>• 10 points for each optional wall that is correctly determined (is in the workspace or not)</p>
+
+<p>• -10 points for each optional wall that is incorrectly determined (no points are deducted for optional walls that have not been determined)</p>
+
+<p>• 10*(time limit (minutes) - actual time(minutes)) if all waypoints and ECwaypoints are visited before time runs out</p>
+
+<p>• up to 20 points for creative and innovative solution</p>
+
+<h3 id="challenges-and-accomplishments">Challenges and Accomplishments</h3>
+
+<p>Our team scored 80 points (90 if you count the first beacon, we did not beep for it because we thought it was obvious).</p>
+:ET

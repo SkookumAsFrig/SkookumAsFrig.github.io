@@ -1,0 +1,10 @@
+I"0<h3 id="project-description">Project Description</h3>
+
+<p>Inspired by the amazing <a href="https://walter.readthedocs.io/en/latest/" style="color: #a83232" target="_blank">Walter</a>.</p>
+
+<p>Low cost, mostly 3D printed 6 degree of freedom robot arm based on LewanSoul LX16A serial servos. Two were built, used in Open AMR, Pixar Lamp, and Ant Subtractor projects. Velocity control and ROS package work in progress.</p>
+
+<h3 id="challenges-and-accomplishments">Challenges and Accomplishments</h3>
+
+<p>Designing robot arms are extremely challenging. One has to tightly package joint actuators, motion supports and electronics into a single, compact product. Moreover, much care has to be taken to ensure that the robot arm has an adequate range of motion, and that no hardware will be damaged in different poses.</p>
+:ET
