@@ -93,6 +93,7 @@ about:
       - logo: <img src="img/tools/tf.png" class="img-responsive img-centered shadowed">
       - logo: <img src="img/tools/pytorch.png" class="img-responsive img-centered shadowed">
       - logo: <img src="img/tools/cuda.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/git.png" class="img-responsive img-centered shadowed">
       - logo: <img src="img/tools/ubuntu.png" class="img-responsive img-centered shadowed">
       - logo: <img src="img/tools/rpi.png" class="img-responsive img-centered shadowed">
       - logo: <img src="img/tools/xilinx.png" class="img-responsive img-centered shadowed">
@@ -103,8 +104,7 @@ about:
       - logo: <img src="img/tools/mplabx.png" class="img-responsive img-centered shadowed">
       - logo: <img src="img/tools/arduino.png" class="img-responsive img-centered shadowed">
       - logo: <img src="img/tools/rslogix.png" class="img-responsive img-centered shadowed">
-      - logo: <img src="img/tools/ps.png" class="img-responsive img-centered shadowed">
-      - logo: <img src="img/tools/premiere.png" class="img-responsive img-centered shadowed">
+      - logo: <img src="img/tools/premiere_ps.png" class="img-responsive img-centered shadowed">
       - logo: <img src="img/tools/maya.png" class="img-responsive img-centered shadowed">
       
   button:
