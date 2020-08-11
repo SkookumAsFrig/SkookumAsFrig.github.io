@@ -1,8 +1,0 @@
-I",<h3 id="project-description">Project Description</h3>
-
-<p>One of the crazier ideas of mine, I decided to create the printer that is designed to print printers. Project began in freshman year of college as I was extremely bored by school, and finished in that summer. With a build volume of 470x510x510mm and full metal frame and extruder, BigXY can run all filaments on the market, while achieving good production accuracy. Dual ballscrew Z axis to support the heated glass build plate, and a beefy Nema 21 stepper to drive it. Linear rail X and Y axis, powered by 2 60mm Nema 17’s running CoreXY mechanism with a direct drive E3D style extruder. The XY belt is stainless reinforced polyurethane to minimize stretch. Involved a lot of machining and a decent amount of welding to build, but only costed around $700 including electronics.</p>
-
-<h3 id="challenges-and-accomplishments">Challenges and Accomplishments</h3>
-
-<p>There were many challenges in this project. First, I had to design the entire printer, easily the biggest CAD assemblies I have put together from scratch at that time. In addition, all of the wiring and electronics are custom made, and I had to customized the Marlin firmware to work with a Core XY architecture of this size. Then, many challenges were encountered during manufacturing. I did almost everything manually in Cornell’s machine shop over 2 weeks. The most difficult part of all were the ball screws. Being case hardened and of an irregular geometry, I had to first make a collar adapter in order to hold the ball screw inside the lathe.</p>
-:ET

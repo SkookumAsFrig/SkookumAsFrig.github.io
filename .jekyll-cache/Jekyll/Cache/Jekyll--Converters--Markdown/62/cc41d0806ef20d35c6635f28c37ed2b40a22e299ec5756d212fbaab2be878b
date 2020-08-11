@@ -1,0 +1,10 @@
+I"¹<h3 id="project-description">Project Description</h3>
+
+<p><a href="https://www.thingiverse.com/thing:1869705" style="color: #a83232" target="_blank">Thingiverse Link</a></p>
+
+<p>A Reprap inspired CoreXY printer, designed from scratch for best footprint/volume utilization, cost and print speed. Print volume ~ 209x220x273mm. Uses many printed parts, and cheap off the shelf components. Costs around $300 to build including electronics, perfect for people looking to get into 3D printing. First prototype built and running since 2016.</p>
+
+<h3 id="challenges-and-accomplishments">Challenges and Accomplishments</h3>
+
+<p>This was built after Big XY, so I used many of the lessons learned from that on this printer. The main challenge was to make the printer as affordable as possible, and make most of the components 3D printed. The other design consideration was space efficiency, so as shown the final product was very compact for its capabilities.</p>
+:ET

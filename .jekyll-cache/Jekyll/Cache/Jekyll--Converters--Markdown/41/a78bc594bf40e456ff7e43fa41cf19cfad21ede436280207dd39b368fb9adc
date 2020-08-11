@@ -1,0 +1,4 @@
+I"�<h3 id="project-description">Project Description</h3>
+
+<p>Completed as the final project of MAE 3780 Mechatronics course. Objective is to succeed in the game of Cube Craze, where two robots go head to head autonomously and try to push a field of 1” cubes to the opponent’s side. We came up with a robust design that yielded 5 wins and 2 losses. Utilizes Atmel 328P running a finite state machine, controlling servos and a custom built H-bridge. Feedback provided by color sensors all around.</p>
+:ET

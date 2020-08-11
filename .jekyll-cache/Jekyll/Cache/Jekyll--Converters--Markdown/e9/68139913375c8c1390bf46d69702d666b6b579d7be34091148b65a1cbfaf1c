@@ -1,0 +1,6 @@
+I"�<h3 id="project-description">Project Description</h3>
+
+<p><a href="img/portfolio/Arduino/28Pins.pdf" style="color: #a83232" target="_blank">Schematics</a></p>
+
+<p>Design done as a part of the Udemy course “Learn to Design Your Own Boards“. Improvements over the standard Arduino 328p design include replaceable MCU DIP socket interface, proper ground/power planes, optimized power filtering as recommended by Atmel, and both 3V3/5V IO variants.</p>
+:ET

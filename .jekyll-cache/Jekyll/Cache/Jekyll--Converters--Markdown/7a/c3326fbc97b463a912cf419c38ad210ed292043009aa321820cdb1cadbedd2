@@ -1,0 +1,4 @@
+I"¼<h3 id="project-description">Project Description</h3>
+
+<p>Goal was to run a pong game at 15 frames per second with as many balls as possible. MCU used was a 40Mhz PIC32, so it needed extensive optimization to handle real time physics calculations at a large scale. We simplified graphics and used direct memory access (DMA) for sound effects, achieving over 300 balls on screen simultaneously. Also coded in some funny end screen messages.</p>
+:ET

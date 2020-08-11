@@ -1,0 +1,8 @@
+I"9<h3 id="project-description">Project Description</h3>
+
+<p>Goal was to control a pendulum with an attached drone motor driving a propeller, to various angular setpoints (-90 to 0, 0 to +30, +30 to -30, back to 0). Built control circuit from scratch using discrete components, as well as the mechanical setup. Derived physics model and developed discrete time PID controller to satisfy design requirements. All run in a multi-thread RTOS on PIC32.</p>
+
+<h3 id="challenges-and-accomplishments">Challenges and Accomplishments</h3>
+
+<p>This project was challenging because it required real time control of a nonlinear physical system, with a linear approximated model. Therefore, it required careful PID tuning to work on the very imperfect 1 DOF helicopter system. It was completed in two weeks with two other group members.</p>
+:ET
