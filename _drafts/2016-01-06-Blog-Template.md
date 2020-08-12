@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: My Arch Linux Love Affair
+title: Template
 category: blog
 ---
 
