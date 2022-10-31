@@ -8,7 +8,7 @@ meta_author: Kowin Shi
 about:
   header: About
   content:
-      left: By day, I design, test and build some of the most powerful vehicle computing platforms in the world to enable autonomy.
+      left: By day, I solve mechatronics problems to accelerate large-scale adoption of drone delivery.
       right: By night, I work on a diverse selection of projects, including custom 3D printers, robotics, machine learning, and financial analysis.
       bottom: I grew up in China and Canada, but have spent the last decade or so in the United States.
       bottom_disc: I currently reside in Seattle WA.
@@ -24,15 +24,16 @@ about:
       center:
         header: Past
         list:
-          - item: Uber ATG, Modules Team
+          - item: Aurora, Compute Design Team
+          - item: Uber ATG, Modules Team (Acquired by Aurora)
           - item: Tesla, Power Electronics Test Team
           - item: Tesla, Motor Design Team
           - item: GAC Automotive Engineering Institute
       right:
         header: Present
         list:
-          - item: Uber ATG
-          - item: Autonomy Hardware Engineer
+          - item: Amazon Prime Air
+          - item: Hardware Development Engineer
   interests:
     header: Skills (Years of Experience)
     content:
@@ -109,7 +110,7 @@ about:
       
   button:
     text: Download My Resume
-    href: /resume/kss223_resume.pdf
+    href: /resume/Kowin_Shi_Resume.pdf
 
 # Google webmaster tools
 google_verify:
