@@ -11,7 +11,7 @@ about:
       left: By day, I design, test and build some of the most powerful vehicle computing platforms in the world to enable autonomy.
       right: By night, I work on a diverse selection of projects, including custom 3D printers, robotics, machine learning, and financial analysis.
       bottom: I grew up in China and Canada, but have spent the last decade or so in the United States.
-      bottom_disc: I currently reside in Pittsburgh PA.
+      bottom_disc: I currently reside in Seattle WA.
   history:
     header: My Journey
     content:
@@ -167,7 +167,7 @@ portfolio:
 # Footer settings
 footer:
   location-header: Location
-  location: Pittsburgh, PA
+  location: Seattle, WA
   copyright: Kowin Shi. All Rights Reserved.
   social: My Other Whereabouts
   new-thoughts: New Thoughts

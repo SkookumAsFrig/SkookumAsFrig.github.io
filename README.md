@@ -2,6 +2,16 @@ https://jekyllrb.com/docs/step-by-step/01-setup/
 Jekyll build
 Jekyll serve
 
+To setup new dev environment:
+1. Install rbenv to manage older ruby version install, 'sudo apt install rbenv'. Newer version ruby install of Jekyll does not generate the site properly, need to use ruby version 2.7 despite what Jekyll docs say.
+2. use rbenv to install ruby 2.7: 'rbenv install 2.7.0', then 'rbenv global 2.7.0' to set default version followed by 'rbenv rehash'.
+3. Verify ruby verions by the following: Check that PATH contains $HOME/.rbenv/shims and $HOME/.rbenv/bin, 'env | grep PATH'. Also check that you have the following in your ~/.bash_profile if using bash or ~/.zshenv if using zsh: 'export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"'
+4. If the above steps need to be corrected, restart terminal to have the proper paths be updated. Then, ruby --version should say 2.7.0.
+5. cd to this repo local folder, do 'gem install jekyll bundler'.
+6. Jekyll serve to build and preview website locally
+
+Below is Bill Martin's documentation for his original template:
 Source code for my [Jekyll](https://jekyllrb.com/)-based portfolio at [billmartin.io](http://billmartin.io), which uses the [Freelancer Jekyll Theme](https://github.com/jeromelachaud/freelancer-theme) with my own additions:
 
 #### Resume Linking
