@@ -55,14 +55,15 @@ margin: 10px 0;
 
 section#about div#left p {
   text-align: right;
+  color: #e0973d;
 }
 
 section#about div#night p {
-  color: #999999;
+  color: #6696ba;
 }
 
 section#about p a {
-  color: #{{ site.color.secondary-light }};
+  color: #{{ site.color.primary-dark }};
 }
 
 section#about div#history_items p a {
@@ -85,12 +86,12 @@ section#about h4  {
 
 section#about li  {
   list-style-type: none;
-  color: #f2f2f2;
+  color: #{{ site.color.primary-dark }};
 }
 
 section#about li:nth-child(odd)  {
   list-style-type: none;
-  color: #999999;
+  color: #858585;
 }
 
 /* Portfolio Grid */
@@ -145,6 +146,7 @@ section.port_grid {
 }
 
 .port_caption {
+  color: #{{ site.color.primary-dark }};
   font-size: 17px;
 }
 
