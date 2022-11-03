@@ -15,11 +15,13 @@ code {
 .top-buffer { margin-top:20px; }
 
 .btn-default {
-  background: #{{ site.color.secondary-dark }};
+  background: #{{ site.color.primary-dark }};
   padding: 15px 45px;
 }
+
 .btn-default:hover {
-  background: #{{ site.color.secondary }};
+  background: #{{ site.color.primary-dark }};
+  opacity: .9;
 }
 
 /* Home */
@@ -97,7 +99,7 @@ section#about li:nth-child(odd)  {
 /* Portfolio Grid */
 
 section.port_grid {
-  background: #fcfcfc;
+  background: #ffffff;
 }
 
 #portfolio hr.star-light:after, #portfolio hr.star-primary:after {
@@ -155,7 +157,7 @@ section.port_grid {
 }
 
 .portfolio-modal .close-modal .lr, .portfolio-modal .close-modal .lr .rl {
-  background-color: #{{ site.color.primary }};
+  background-color: #{{ site.color.primary-dark }};
 }
 
 /* .portfolio-modal img {
@@ -214,7 +216,7 @@ section.port_grid {
 
 .portfolio-modal li:nth-child(odd)  {
   list-style-type: none;
-  color: #{{ site.color.primary }};
+  color: #000000;
 }
 
 .portfolio-modal .skills hr.star-light {
@@ -230,7 +232,7 @@ section.port_grid {
 /* Blog Grid */
 
 section.blog_grid {
-  background: #fcfcfc;
+  background: #ffffff;
 }
 
 section#blog hr.star-primary:after {

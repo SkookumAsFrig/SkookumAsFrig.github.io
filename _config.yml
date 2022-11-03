@@ -132,7 +132,7 @@ google_analytics_tracker_id: UA-175893800-1
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: f4f4f4 #80B3FF
+  primary: f6f6f6 #80B3FF
   primary-dark: 343434
   primary-rgb: "255,0,0" #"128,179,255"
   secondary-light: 58635a #FD6E8A

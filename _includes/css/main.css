@@ -241,6 +241,7 @@ section.success {
     transition: all ease .1s;
 }
 
+
 #portfolio .portfolio-item .portfolio-link .caption:hover {
     opacity: 1;
 }
@@ -444,7 +445,7 @@ footer .footer-below {
 }
 
 .portfolio-modal .close-modal:hover {
-    opacity: .3;
+    opacity: .7;
 }
 
 .portfolio-modal .close-modal .lr {
