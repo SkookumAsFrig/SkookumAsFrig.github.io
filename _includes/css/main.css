@@ -258,6 +258,7 @@ section.success {
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+    color: #ffffff;
     margin-top: -12px;
 }
 
@@ -290,7 +291,7 @@ section.success {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #{{ site.color.primary }};
+    color: #{{ site.color.primary-dark }};
     background: #fff;
 }
 
@@ -470,11 +471,15 @@ footer .footer-below {
 }
 
 .navbar-nav>.active>a {
-    background-color:  #{{ site.color.primary }};
+    background-color:  #{{ site.color.primary-dark }} !important;
+}
+
+.navbar-nav>.active>a:hover {
+    color: #{{ site.color.primary }} !important;
 }
 
 .navbar {
-    background-color:  #000000;
+    background-color:  #000000 !important;
 }
 
 /* Fix modal mouse wheel issues */

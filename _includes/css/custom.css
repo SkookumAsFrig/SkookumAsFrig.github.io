@@ -12,6 +12,11 @@ code {
   color: #393318;
 }
 
+.nav-link:hover,
+.navbar-brand:hover{
+  color: #818181 !important;
+}
+
 .top-buffer { margin-top:20px; }
 
 .btn-default {
@@ -150,6 +155,10 @@ section.port_grid {
 .port_caption {
   color: #{{ site.color.primary-dark }};
   font-size: 17px;
+}
+
+.port_caption:hover {
+  color: #{{ site.color.primary-dark }};
 }
 
 .portfolio-modal hr.star-primary:after {
