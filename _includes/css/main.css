@@ -469,11 +469,11 @@ footer .footer-below {
 }
 
 .navbar-nav>.active>a {
-    background-color:  #757575 !important;
+    background-color:  #{{ site.color.primary }};
 }
 
 .navbar {
-    background-color:  #363636 !important;
+    background-color:  #000000;
 }
 
 /* Fix modal mouse wheel issues */
