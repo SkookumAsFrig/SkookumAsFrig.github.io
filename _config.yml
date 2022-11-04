@@ -184,7 +184,7 @@ social:
     url: http://www.linkedin.com/in/kowin-shi
 
 # Credits content
-credits: '<a href="https://github.com/bill-c-martin/bill-c-martin.github.io">Website built from Jekyll Template</a>'
+credits: '<a href="https://github.com/bill-c-martin/bill-c-martin.github.io">Website built on Jekyll Template</a>'
 
 # Build settings
 permalink: pretty
