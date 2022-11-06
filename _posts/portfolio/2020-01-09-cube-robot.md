@@ -2,7 +2,7 @@
 layout: default
 title: AUTONOMOUS CUBE CRAZE ROBOT
 category: portfolio
-modal-id: 23
+modal-id: 2
 vid1: null
 vid2: null
 img: Cube_Robot/cover.jpg
