@@ -1,8 +1,0 @@
-I"q<h3 id="project-description">Project Description</h3>
-
-<p><a href="https://www.thingiverse.com/thing:3155783" style="color: #a83232" target="_blank">Thingiverse Link</a></p>
-
-<p>Handheld Multipurpose RF Data Logger with reconfigurable UI and SD card expansion, powered by an Adafruit Feather M0 with RFM69 radio packet. Currently configured for 1Ghz ISM band, with custom designed miniature 9-key keypad and 128x128 pixel TFT LCD. Rear enclosure is CNC machined from billet aluminum 6061, front cover is 3D printed with faux wood filament to achieve a minimalist and elegant design. With built in 2000mah Lipo pouch cell, this device can last for a year without needing to recharge.</p>
-
-<p>On the software side, I was able to get the Feather M0 to run triple independent high speed SPI communication at 12Mhz, to update the TFT and transmit data to the RF module and SD card.</p>
-:ET
