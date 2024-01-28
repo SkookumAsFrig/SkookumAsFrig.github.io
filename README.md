@@ -3,6 +3,7 @@ Jekyll build
 Jekyll serve
 
 To setup new dev environment:
+
 0. ensure ruby-build is 2022 or newer. openssl 1.1 is needed to build older ruby versions which is not handled by old rbenv.
 1. Install rbenv to manage older ruby version install, 'sudo apt install rbenv'. Newer version ruby install of Jekyll does not generate the site properly, need to use ruby version 2.7 despite what Jekyll docs say.
 2. use rbenv to install ruby 2.7: 'rbenv install 2.7.0', then 'rbenv global 2.7.0' to set default version followed by 'rbenv rehash'.
