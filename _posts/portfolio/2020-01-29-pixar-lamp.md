@@ -2,7 +2,7 @@
 layout: default
 title: PIXAR LAMP ROBOT
 category: portfolio
-modal-id: 3
+modal-id: 22
 vid1: <div class="video-container"> <iframe class="video" src="https://www.youtube.com/embed/wWRPxG7BYHI" allowfullscreen></iframe> </div>
 vid2: <div class="video-container"> <iframe class="video" src="https://www.youtube.com/embed/BmQvYnkPvnc" allowfullscreen></iframe> </div>
 img: Pixar_Lamp/image-asset.jpeg

@@ -134,12 +134,13 @@ google_analytics_tracker_id: UA-175893800-1
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 1f1f1f #80B3FF
+  primary: f6f6f6 #80B3FF
+  primary-dark: 343434
   primary-rgb: "255,0,0" #"128,179,255"
   secondary-light: 58635a #FD6E8A
   secondary: 38433a #FD6E8A
   secondary-dark: 101010 #A2122F
-  blog-text: 222
+  blog-text: 343434
   link: 1a77bd
 
 # Blog settings
@@ -185,7 +186,7 @@ social:
     url: http://www.linkedin.com/in/kowin-shi
 
 # Credits content
-credits: '<a href="https://github.com/bill-c-martin/bill-c-martin.github.io">Website built from Jekyll Template</a>'
+credits: '<a href="https://github.com/bill-c-martin/bill-c-martin.github.io">Website built on Freelancer Jekyll Theme</a>'
 
 # Build settings
 permalink: pretty
