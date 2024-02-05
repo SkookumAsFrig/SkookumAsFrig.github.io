@@ -107,12 +107,20 @@ section.port_grid {
   background: #ffffff;
 }
 
+#portfolio-title {
+  margin-top: 150px;
+}
+
 #portfolio hr.star-light:after, #portfolio hr.star-primary:after {
     content: "\f0b1";
 }
 
 #portfolio .portfolio-item {
   text-align: center;
+}
+
+.portfolio-link {
+  width: 92%;
 }
 
 /* #portfolio .portfolio-item .portfolio-link {
