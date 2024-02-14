@@ -8,10 +8,10 @@ meta_author: Kowin Shi
 about:
   header: About
   content:
-      left: By day, I solve mechatronics problems to accelerate large-scale adoption of drone delivery.
+      left: By day, I solve mechatronics problems to reduce herbicide usage and improve yield for farmers.
       right: By night, I work on a diverse selection of projects, including custom 3D printers, robotics, machine learning, and financial analysis.
-      bottom: I grew up in China and Canada, but have spent the last decade or so in the United States.
-      bottom_disc: I currently reside in Seattle WA.
+      bottom: I grew up in China and Canada, but have spent the last decade in the United States.
+      bottom_disc: I currently reside in Bay Area CA.
   history:
     header: My Journey
     content:
@@ -24,7 +24,8 @@ about:
       center:
         header: Past
         list:
-          - item: Aurora, Compute Design Team
+          - item: Amazon, Prime Air
+          - item: Aurora Innovation, Compute Design Team
           - item: Uber ATG, Modules Team (Acquired by Aurora)
           - item: Tesla, Power Electronics Test Team
           - item: Tesla, Motor Design Team
@@ -32,48 +33,49 @@ about:
       right:
         header: Present
         list:
-          - item: Amazon Prime Air
-          - item: Hardware Development Engineer
+          - item: Blue River Technology (John Deere)
+          - item: Mechatronics Engineer
   interests:
     header: Skills (Years of Experience)
     content:
       left:
         header: Hardware
         list:
-          - item: Mechanical CAD/CAM (8)
-          - item: Structural/CFD/Heat Transfer Simulation (5)
-          - item: Electrical CAD, PCBA Bringup (3)
-          - item: Mass Manufacturing/Injection Molding (3)
-          - item: Machining and Welding (5)
-          - item: 3D Printing (8)
-          - item: Electro-Mechanical Integration (8)
-          - item: Battery Design (5)
-          - item: Electrical/ICE Vehicle Systems Design (5)
-          - item: Robotics Systems Design (8)
-          - item: Design Evaluation and Methodology (5)
-          - item: GD&T (4)
+          - item: Mechanical CAD/CAM (<script>document.write( new Date().getFullYear() - 2024  + 10);</script>)
+          - item: Structural/CFD/Heat Transfer Simulation (<script>document.write( new Date().getFullYear() - 2024  + 7);</script>)
+          - item: Electrical CAD, PCBA Bringup (<script>document.write( new Date().getFullYear() - 2024  + 5);</script>)
+          - item: Automotive Harness Design (<script>document.write( new Date().getFullYear() - 2024  + 2);</script>)
+          - item: Mass Manufacturing/Injection Molding (<script>document.write( new Date().getFullYear() - 2024  + 5);</script>)
+          - item: Machining and Welding (<script>document.write( new Date().getFullYear() - 2024  + 7);</script>)
+          - item: 3D Printing (<script>document.write( new Date().getFullYear() - 2024  + 10);</script>)
+          - item: Electro-Mechanical Integration (<script>document.write( new Date().getFullYear() - 2024  + 10);</script>)
+          - item: Battery Design (<script>document.write( new Date().getFullYear() - 2024  + 7);</script>)
+          - item: Electrical/ICE Vehicle Systems Design (<script>document.write( new Date().getFullYear() - 2024  + 7);</script>)
+          - item: Robotics Systems Design (<script>document.write( new Date().getFullYear() - 2024  + 10);</script>)
+          - item: Testing and Validation (<script>document.write( new Date().getFullYear() - 2024  + 7);</script>)
+          - item: GD&T (<script>document.write( new Date().getFullYear() - 2024  + 6);</script>)
       center:
         header: Software
         list:
-          - item: Python (5)
-          - item: C/C++ (5)
-          - item: Verilog (2)
-          - item: Linux (3)
-          - item: Embedded Systems (4)
-          - item: Java (2)
+          - item: Python (<script>document.write( new Date().getFullYear() - 2024  + 7);</script>)
+          - item: C/C++ (<script>document.write( new Date().getFullYear() - 2024  + 7);</script>)
+          - item: Verilog (<script>document.write( new Date().getFullYear() - 2024  + 2);</script>)
+          - item: Linux (<script>document.write( new Date().getFullYear() - 2024  + 5);</script>)
+          - item: Embedded Systems (3)
+          - item: Java (1)
           - item: PLC Ladder Logic (2)
-          - item: ROS (2)
-          - item: HTML/CSS/Javascript (1)
-          - item: Robotics Algorithms (2)
-          - item: Optimal Control Algorithms (3)
+          - item: ROS (<script>document.write( new Date().getFullYear() - 2024  + 2);</script>)
+          - item: HTML/CSS/Javascript (<script>document.write( new Date().getFullYear() - 2024  + 3);</script>)
+          - item: Robotics Algorithms (<script>document.write( new Date().getFullYear() - 2024  + 4);</script>)
+          - item: Optimal Control Algorithms (2)
           - item: Machine Learning Algorithms/Frameworks (2)
-          - item: Hardware Acceleration, CUDA (2)
+          - item: Hardware Acceleration, CUDA (1)
       right:
         header: Misc
         list:
           - item: Mandarin (Native Proficiency)
           - item: Spanish (Limited Working Proficiency)
-          - item: Financial Analysis (1)
+          - item: Financial Analysis (3)
   tools:
     header: Tools I Use
     list:
