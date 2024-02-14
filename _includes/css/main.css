@@ -147,28 +147,32 @@ header .intro-text .skills {
     }
 }
 
+/* hacky way to make messed up css overrides work */
+
 @media(min-width:768px) {
-    .navbar-fixed-top {
+    .navbar-top {
         padding: 20px 0;
-        -webkit-transition: padding .1s;
-        -moz-transition: padding .1s;
-        transition: padding .1s;
     }
 
-    .navbar-fixed-top .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all .1s;
-        -moz-transition: all .1s;
-        transition: all .1s;
+    .navbar-top .navbar-brand {
+        font-size: 3em;
     }
 
-    .navbar-fixed-top.navbar-shrink {
+    .navbar-brand{
+        color:#000000 !important;
+    }
+    
+    .nav-link{
+        color:#000000 !important;
+    }
+
+    /* .navbar-fixed-top.navbar-shrink {
         padding: 10px 0;
-    }
+    } */
 
-    .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
-    }
+    /* .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 2em;
+    } */
 }
 
 .navbar {
@@ -290,9 +294,9 @@ section.success {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 2px #fff;
-    color: #000000;
-    background: #fff;
+    border: solid 2px #000;
+    color: #fff;
+    background: #000;
 }
 
 .floating-label-form-group {
@@ -472,16 +476,12 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 
-.navbar-nav>.active>a {
-    background-color:  #{{ site.color.primary-dark }} !important;
-}
-
 .navbar-nav>.active>a:hover {
     color: #{{ site.color.primary }} !important;
 }
 
 .navbar {
-    background-color:  #000000 !important;
+    background: #ffffff !important;
 }
 
 /* Fix modal mouse wheel issues */
