@@ -101,6 +101,10 @@ section#about li:nth-child(odd)  {
   color: #858585;
 }
 
+.resume-button{
+  margin-bottom: 20px;
+}
+
 /* Portfolio Grid */
 
 section.port_grid {
