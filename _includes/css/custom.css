@@ -465,6 +465,7 @@ section#contact button:hover{
 } */
 
 .form-input{
+  /* border: 1px solid #000; */
   background-color: #{{ site.color.primary }} !important;
 }
 
@@ -503,7 +504,7 @@ footer .tooltip .tooltip-arrow{
 }
 
 footer .tooltip .tooltip-inner{
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 footer .footer-col {
@@ -515,7 +516,7 @@ footer p {
 }
 
 footer p a, footer p a:hover{
-  color: #{{ site.color.secondary-light }};
+  color: #000000;
 }
 
 pre.highlight {
