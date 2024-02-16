@@ -57,7 +57,8 @@ section#about hr.star-narrow:after {
 }
 
 section#about div.row {
-margin: 10px 0;
+  font-weight: bold;
+  margin: 10px 0;
 }
 
 section#about div#left p {
@@ -92,8 +93,9 @@ section#about h4  {
 }
 
 section#about li  {
+  font-weight: bold;
   list-style-type: none;
-  color: #{{ site.color.primary-dark }};
+  color: #000000;
 }
 
 section#about li:nth-child(odd)  {
