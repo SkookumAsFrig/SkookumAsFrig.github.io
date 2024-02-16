@@ -1,7 +1,8 @@
 <article class="blog-post" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
-    <hr class="star-primary">
+    <div class="col-lg-6 col-lg-offset-3 col-xs-8 col-xs-offset-2 text-center">
+      <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+      <hr class="star-primary">
     <p>
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="blog-date">{{ page.date | date: "%b %-d, %Y" }}</time>
       {% if page.author %}
@@ -10,10 +11,13 @@
         </span>
       {% endif %}
     </p>
-  </header>
-  <div class="content" itemprop="articleBody">
-    {{ content }}
   </div>
+  </header>
+
+    <div class="col-lg-4 col-lg-offset-4 col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2" itemprop="articleBody">
+      {{ content }}
+    </div>
+
   <footer>
     <div class="container">
       <a class="prev" href="{{page.previous.url}}">
