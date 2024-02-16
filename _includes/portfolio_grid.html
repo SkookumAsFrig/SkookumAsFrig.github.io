@@ -1,16 +1,16 @@
 <!-- Portfolio Grid Section -->
 <section class="port_grid" id="portfolio">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
+        <div class="row" id="portfolio-title">
+            <!-- <div class="col-md-12 text-center">
                 <h2>Portfolio</h2>
                 <hr class="star-primary">
-            </div>
+            </div> -->
         </div>
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-12" >
             {% for post in site.categories['portfolio'] %}
             <!-- The above for loops etc are written in liquid language, see https://shopify.github.io/liquid/ for docs -->
-                <div class="col-md-4 portfolio-item">
+                <div class="col-md-4 portfolio-item" id="portfolio-grid">
                     <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <!-- <div class="caption-content">
@@ -26,7 +26,7 @@
                 {% assign loopindex = forloop.index | modulo: 3 %}
                 {% if loopindex == 0 %}
         </div>
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-12">
                 {% endif%}
             {% endfor %}
         </div>

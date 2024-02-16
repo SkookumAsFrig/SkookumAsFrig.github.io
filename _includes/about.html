@@ -2,16 +2,19 @@
     <section class="success" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <!-- <div class="col-lg-12 text-center">
                     <h2>{{ site.about.header }}</h2>
                     <hr class="star-light">
-                </div>
+                </div> -->
+            </div>
+            <div class="col-lg-6 col-lg-offset-3 col-xs-8 col-xs-offset-2" style="transform: translateY(-15%);">
+                <img class="img-responsive shadowed-profile" src="/img/profile.jpg" alt="">
             </div>
             <div class="row">
-                <div id="left" class="col-md-5 col-md-offset-1">
+                <div id="left" class="col-lg-5 col-lg-offset-1 col-xs-5 col-xs-offset-1">
                     <p>{{ site.about.content.left }}</p>
                 </div>
-                <div class="col-md-5" id="night">
+                <div class="col-lg-5 col-xs-5" id="night">
                     <p>{{ site.about.content.right }}</p>
                 </div>
             </div>
@@ -24,7 +27,7 @@
                 <div class="col-lg-12 text-center">
                   <p>{{ site.about.content.bottom_disc }}</p>
                 </div>
-              </div>
+            </div>
             
             <div class="row" id="history">
                 <div class="col-lg-12 text-center">
@@ -59,6 +62,15 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="resume-button col-xs-8 col-xs-offset-2 text-center">
+                    <a href="{{ site.about.button.href }}" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> {{ site.about.button.text }}
+                    </a>
+                </div>
+            </div>
+
             <!-- Below are Skills section items -->
             <div class="row" id="interests">
                 <div class="col-lg-12 text-center">
@@ -111,13 +123,6 @@
                     {% endif%}
 
                 {% endfor %}
-            </div>
-            <div class="row">
-                <div class="col-xs-8 col-xs-offset-2 text-center">
-                    <a href="{{ site.about.button.href }}" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> {{ site.about.button.text }}
-                    </a>
-                </div>
             </div>
         </div>
     </section>

@@ -8,8 +8,8 @@ meta_author: Kowin Shi
 about:
   header: About
   content:
-      left: By day, I solve mechatronics problems to reduce herbicide usage and improve yield for farmers.
-      right: By night, I work on a diverse selection of projects, including custom 3D printers, robotics, machine learning, and financial analysis.
+      left: By day, I solve robotics problems to reduce herbicide usage and improve yield for farmers.
+      right: By night, I work on a diverse selection of projects, including custom 3D printers, robot arms, machine learning, and financial analysis.
       bottom: I grew up in China and Canada, but have spent the last decade in the United States.
       bottom_disc: I currently reside in Bay Area CA.
   history:
@@ -171,7 +171,7 @@ portfolio:
 # Footer settings
 footer:
   location-header: Location
-  location: Seattle, WA
+  location: San Francisco, CA
   copyright: Kowin Shi. All Rights Reserved.
   social: My Other Whereabouts
   new-thoughts: New Thoughts

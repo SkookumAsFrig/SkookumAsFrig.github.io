@@ -101,10 +101,18 @@ section#about li:nth-child(odd)  {
   color: #858585;
 }
 
+.resume-button{
+  margin-bottom: 20px;
+}
+
 /* Portfolio Grid */
 
 section.port_grid {
   background: #ffffff;
+}
+
+#portfolio-title {
+  margin-top: 0px;
 }
 
 #portfolio hr.star-light:after, #portfolio hr.star-primary:after {
@@ -113,6 +121,10 @@ section.port_grid {
 
 #portfolio .portfolio-item {
   text-align: center;
+}
+
+.portfolio-link {
+  width: 95%;
 }
 
 /* #portfolio .portfolio-item .portfolio-link {
@@ -293,11 +305,12 @@ section#blog div.blog-item:hover a{
 
 article.blog-post {
   font-family: "PT Serif", "PT Sans", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #{{ site.color.primary }};
+  background-color: #fff;
 }
 
 article.blog-post header {
-  padding: 140px 0 30px 0
+  padding: 140px 0 30px 0;
+  background-color: #fff;
 }
 
 article.blog-post div.content {
@@ -395,7 +408,7 @@ article.blog-post footer {
   display: block;
   width: auto;
   overflow: hidden;
-  background: #{{ site.color.primary }};
+  background: #fff;
 }
 
 article.blog-post footer div.container {
@@ -417,9 +430,14 @@ article.blog-post footer .next {
 
 /* Contact */
 
+.contact-title{
+  margin-bottom: 25px;
+}
+
 section#contact {
     color: #{{ site.color.primary-dark }};
-    background: #{{ site.color.primary }};
+    /* background: #{{ site.color.primary }}; */
+    background-color: #fff;
 }
 
 section#contact hr.star-primary {
@@ -451,6 +469,16 @@ section#contact button:hover{
     background: #{{ site.color.secondary-dark }};
 } */
 
+.form-input{
+  /* border: 1px solid #000; */
+  background-color: #{{ site.color.primary }} !important;
+}
+
+.form-control-thin{
+  margin: 0;
+  top: 50%;
+  transform: translateY(15%);
+}
 
 .contact-label{
     color: #7a7a7a !important;
@@ -481,8 +509,7 @@ footer .tooltip .tooltip-arrow{
 }
 
 footer .tooltip .tooltip-inner{
-  color: #{{ site.color.primary-dark  }};
-  background-color: #{{ site.color.primary  }};
+  background-color: #000000;
 }
 
 footer .footer-col {
@@ -494,7 +521,7 @@ footer p {
 }
 
 footer p a, footer p a:hover{
-  color: #{{ site.color.secondary-light }};
+  color: #000000;
 }
 
 pre.highlight {
