@@ -5,7 +5,7 @@ category: blog
 ---
 
 <figure>
-    <img src="{{site.url}}/img/blog/car_display1/dash_default.jpg" class="img-responsive img-centered" alt="{{ post.alt }}" style="margin-bottom: 5px">
+    <img src="{{ 'img/blog/car_display1/dash_default.jpg' | resize: '800x800>' }}" class="img-responsive img-centered" alt="{{ post.alt }}" style="margin-bottom: 5px">
     <figcaption class="text-center">Current RAV4 dash setup, notice the phone mount (with my janky wireless charger) covers an HVAC vent and basically renders it useless.</figcaption>
 </figure>
 
@@ -18,19 +18,19 @@ I have been driving a 4th gen Toyota RAV4 for a few years. It is a rock solid ca
 
 I leaned towards making my own display, but not before doing some conceptual prototype tests and doing some component research. I put together this display quickly using some parts I had on hand:
 
-<img src="{{site.url}}/img/blog/car_display1/prototype_labeled.jpg" class="img-responsive img-centered" alt="{{ post.alt }}">
+<img src="{{ 'img/blog/car_display1/prototype_labeled.jpg' | resize: '800x800>' }}" class="img-responsive img-centered" alt="{{ post.alt }}">
 
 Unfortunately it was too large to fit anywhere on the dash, so I had to mount it from the windshield, obstructing my hood visibility slightly. But this test is important to prove the viability of software and UI.
 
-<img src="{{site.url}}/img/blog/car_display1/screen_off.jpg" class="img-responsive img-centered" alt="{{ post.alt }}">
+<img src="{{ 'img/blog/car_display1/screen_off.jpg' | resize: '800x800>' }}" class="img-responsive img-centered" alt="{{ post.alt }}">
 
 Power comes from a "78W" cigarette lighter 12V port DCDC converter.
 
-<img src="{{site.url}}/img/blog/car_display1/cardisplay_charger.jpg" class="img-responsive img-centered" style="max-width: 350px" alt="{{ post.alt }}">
+<img src="{{ 'img/blog/car_display1/cardisplay_charger.jpg' | resize: '800x800>' }}" class="img-responsive img-centered" style="max-width: 350px" alt="{{ post.alt }}">
 
 From its construction, it appears to be multiple buck converters combined, running 12VDC to the satellite board where 3 more buck converters sit. It works well for my setup because at least 2x additional USB 5V sources are needed to power the existing two dashcams. The satellite board triple output is useful for the prototype where the screen needs separate power, due to the Raspi undervolting from charging the phone. I successfully got it to run <a href="https://github.com/opencardev/crankshaft/releases/tag/csng-alpha7.5" style="color: #a83232" target="_blank">Crankshaft NG alpha-7.5 2022-06-29</a> in wired mode, the latest release v2022.09.12.1 at the time encountered crankshaft stack errors after boot up. Here it is in action:
 
-<img src="{{site.url}}/img/blog/car_display1/screen_on.jpg" class="img-responsive img-centered" alt="{{ post.alt }}">
-<img src="{{site.url}}/img/blog/car_display1/nav_on.jpg" class="img-responsive img-centered" alt="{{ post.alt }}">
+<img src="{{ 'img/blog/car_display1/screen_on.jpg' | resize: '800x800>' }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+<img src="{{ 'img/blog/car_display1/nav_on.jpg' | resize: '800x800>' }}" class="img-responsive img-centered" alt="{{ post.alt }}">
 
 For audio setup, I opted to use a small USB speaker as the screen did not have it built in. I chose not to run the audio to my car's aux input as I frequently use the radio (old school, I know), plus it avoids the volume dim when navigation alerts come up. I drove on this setup for a week to validate it and it performed as expected. The OS partition is setup with overlay readonly, so sudden loss of power without running through shutdown sequence would not corrupt the rootfs. This concludes part 1 of the project log, I still need to investigate the component availability to solve the packaging/reliability issues.

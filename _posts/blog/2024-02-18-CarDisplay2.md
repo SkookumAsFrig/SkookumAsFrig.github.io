@@ -19,12 +19,16 @@ A competing product line exists as well: <a href="https://www.seeedstudio.com/Re
 * **Seeed Studio ReTerminal** - $200. 5" 720x1280 pixel touchscreen, 5V 3A input. Potentially better reliability from large heatsink and industrial focus. No audio amp onboard.
 
 Packaging wise, the feasible screen locations are shown below. The 7" screen has huge bezels, will not fit between the left dash trim and A pillar.
-<img src="{{site.url}}/img/blog/car_display2/dash_scstudy.jpg" class="img-responsive img-centered" alt="{{ post.alt }}">
+<img src="{{ 'img/blog/car_display2/dash_scstudy.jpg' | resize: '800x800>' }}" class="img-responsive img-centered" alt="{{ post.alt }}">
 
 For airbag deployment concerns on the left dash, I studied a few crash test videos. The side curtain airbags stop about 6" before the corner of the window, and the retaining cord comes down from the A pillar. The pocket of free space is just enough for something like a 5" screen, in fact the dash trim it would replace is completely visible in the video. As long as it is securely mounted to the dash, the assembly should not impede the deployment nor add additional risk to occupants. Just need to make sure it does not become a projectile (aka overdesign the mounts).
 
 <figure>
-    <img src="{{site.url}}/img/blog/car_display2/RAV4_crashtest.gif" class="img-responsive img-centered" alt="{{ post.alt }}" style="margin-bottom: 5px">
+    <img src="{{ 'img/blog/car_display2/RAV4_crashtest.gif' | resize: '800x800>' }}" class="img-responsive img-centered" alt="{{ post.alt }}" style="margin-bottom: 5px">
     <figcaption class="text-center">Source: 2015 Toyota RAV4 driver-side small overlap IIHS crash test </figcaption>
 </figure>
 
+Removing both the center and left side dash trims reveal much better existing features for the left side option. The center long dash trim is anchored with long spaces in between, giving few bolting points appropriate for the length of the screen (ideally 2x with a flat surface to constrain). The left dash trim, although with 2 bolts at different planes, appears to be the prime candidate:
+
+<img src="{{ 'img/blog/car_display2/remove_trim.jpg' | resize: '800x800>' }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+<img src="{{ 'img/blog/car_display2/trim_off.jpg' | resize: '800x800>' }}" class="img-responsive img-centered" alt="{{ post.alt }}">

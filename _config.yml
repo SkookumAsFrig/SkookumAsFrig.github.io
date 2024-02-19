@@ -187,13 +187,26 @@ social:
 
 plugins:
   - jekyll-compress-images
+  - jekyll-resize
+
+baseurl: ""
 
 imageoptim:
   svgo: false
-  verbose: true
+  verbose: false
+  allow_lossy: true
+  jpegoptim:
+    allow_lossy: true
+    max_quality: 50
+  jpegrecompress:
+    allow_lossy: true
+    quality: 1
 
 compress_images:
-  images_path: "img/blog/*/*.{png,jpg,jpeg,svg}"
+  images_path: "img/blog/**/*.{png,jpg,jpeg,svg,gif}"
+
+exclude:
+  - _compress_images_cache.yml
 
 
 # Credits content
