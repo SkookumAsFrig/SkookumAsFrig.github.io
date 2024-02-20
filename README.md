@@ -24,14 +24,14 @@ eval "$(rbenv init -)"'
 
 _In 2023, there is a better and straightforward solve to use custom plugins on Github Pages using Github Actions. All the steps are documented on the official page of Jekyll: https://jekyllrb.com/docs/continuous-integration/github-actions/. Reproducing the steps from the article above here:_
 
-*Go to the Settings tab on your repository.
-*Under Code and automation, click Pages (last option).
-*Change Source under Build and deployment from Deploy from a branch to GitHub Actions.
-*Go to the Actions tab on your repository.
-*Start a New workflow and search for Jekyll.
-*Click Configure under the Jekyll workflow (NOT GitHub Pages Jekyll workflow).
-*Review the change and click Commit changes.
-*On pushing any local changes onto the default branch, the action will be triggered and the build will start.
+- Go to the Settings tab on your repository.
+- Under Code and automation, click Pages (last option).
+- Change Source under Build and deployment from Deploy from a branch to GitHub Actions.
+- Go to the Actions tab on your repository.
+- Start a New workflow and search for Jekyll.
+- Click Configure under the Jekyll workflow (NOT GitHub Pages Jekyll workflow).
+- Review the change and click Commit changes.
+- On pushing any local changes onto the default branch, the action will be triggered and the build will start.
 
 _The build might fail because of an error as below:_
 
