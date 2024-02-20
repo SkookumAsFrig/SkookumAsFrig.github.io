@@ -9,7 +9,7 @@ about:
   header: About
   content:
       left: By day, I solve robotics problems to reduce herbicide usage and improve yield for farmers.
-      right: By night, I work on a diverse selection of projects, including custom 3D printers, robot arms, machine learning, and financial analysis.
+      right: By night, I work on a diverse selection of projects, including custom 3D printers, racing sims, machine learning, financial analysis, and this website.
       bottom: I grew up in China and Canada, but have spent the last decade in the United States.
       bottom_disc: I currently reside in Bay Area CA.
   history:
@@ -184,6 +184,30 @@ social:
   - title: linkedin
     tooltip: "Linkedin: Places I've worked"
     url: http://www.linkedin.com/in/kowin-shi
+
+plugins:
+  - jekyll-compress-images
+  - jekyll-resize
+
+baseurl: ""
+
+imageoptim:
+  svgo: false
+  verbose: false
+  allow_lossy: true
+  jpegoptim:
+    allow_lossy: true
+    max_quality: 50
+  jpegrecompress:
+    allow_lossy: true
+    quality: 1
+
+compress_images:
+  images_path: "img/blog/**/*.{png,jpg,jpeg,svg,gif}"
+
+exclude:
+  - _compress_images_cache.yml
+
 
 # Credits content
 credits: '<a href="https://github.com/bill-c-martin/bill-c-martin.github.io">Website built on Freelancer Jekyll Theme</a>'

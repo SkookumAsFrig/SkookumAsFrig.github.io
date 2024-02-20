@@ -16,7 +16,9 @@ PREFIX=/usr/local ./ruby-build-*/install.sh
 eval "$(rbenv init -)"'
 5. If the above steps need to be corrected, restart terminal to have the proper paths be updated. Then, ruby --version should say 2.7.0.
 6. cd to this repo local folder, do 'gem install jekyll bundler'.
-7. Jekyll serve to build and preview website locally
+7. I have added some jekyll plugins to reduce and compress images. Do bundle install to install the plugins from Gemfile. They are https://github.com/MichaelCurrin/jekyll-resize and https://github.com/valerijaspasojevic/jekyll-compress-images
+8. jekyll-resize needs sudo apt install imagemagick as prerequisite. Install that if bundle install fails.
+9. Jekyll serve to build and preview website locally.
 
 Below is Bill Martin's documentation for his original template:
 Source code for my [Jekyll](https://jekyllrb.com/)-based portfolio at [billmartin.io](http://billmartin.io), which uses the [Freelancer Jekyll Theme](https://github.com/jeromelachaud/freelancer-theme) with my own additions:
