@@ -20,6 +20,23 @@ eval "$(rbenv init -)"'
 8. jekyll-resize needs sudo apt install imagemagick as prerequisite. Install that if bundle install fails.
 9. Jekyll serve to build and preview website locally.
 
+**Due to using custom gems, this repo cannot be built by using the default github pages workflow, and needs github actions as described by https://stackoverflow.com/questions/51977736/how-to-install-use-jekyll-plugins-in-githubpages **
+_In 2023, there is a better and straightforward solve to use custom plugins on Github Pages using Github Actions. All the steps are documented on the official page of Jekyll: https://jekyllrb.com/docs/continuous-integration/github-actions/. Reproducing the steps from the article above here:
+
+Go to the Settings tab on your repository.
+Under Code and automation, click Pages (last option).
+Change Source under Build and deployment from Deploy from a branch to GitHub Actions.
+Go to the Actions tab on your repository.
+Start a New workflow and search for Jekyll.
+Click Configure under the Jekyll workflow (NOT GitHub Pages Jekyll workflow).
+Review the change and click Commit changes.
+On pushing any local changes onto the default branch, the action will be triggered and the build will start.
+
+The build might fail because of an error as below:
+
+ Invalid date '<%= Time.now.strftime('%Y-%m-%d %H:%M:%S %z') %>': Document 'vendor/cache/gems/jekyll-3.2.1/lib/site_template/_posts/0000-00-00-welcome-to-jekyll.markdown.erb' does not have a valid date in the YAML front matter.
+To fix this, place the line exclude: [vendor] in _config.yml. More discussion here: https://github.com/jekyll/jekyll/issues/5267._
+
 Below is Bill Martin's documentation for his original template:
 Source code for my [Jekyll](https://jekyllrb.com/)-based portfolio at [billmartin.io](http://billmartin.io), which uses the [Freelancer Jekyll Theme](https://github.com/jeromelachaud/freelancer-theme) with my own additions:
 
