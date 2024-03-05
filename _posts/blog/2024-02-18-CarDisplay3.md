@@ -45,3 +45,7 @@ After 3D printing this test piece on a MarkForged machine, I test-fitted it. To 
 <img src="{{ 'img/blog/car_display3/fit_side.jpg' | resize: '800x800>' }}" class="img-responsive img-centered" alt="{{ post.alt }}">
 <img src="{{ 'img/blog/car_display3/fit_left.jpg' | resize: '800x800>' }}" class="img-responsive img-centered" alt="{{ post.alt }}">
 <img src="{{ 'img/blog/car_display3/fit_btm.jpg' | resize: '800x800>' }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+
+Here is a teaser of what the screen will look like to the driver. It is starting to look real!
+
+<img src="{{ 'img/blog/car_display3/screen_preview.png' | resize: '800x800>' }}" class="img-responsive img-centered" alt="{{ post.alt }}">
