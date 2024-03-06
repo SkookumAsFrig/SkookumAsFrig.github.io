@@ -23,11 +23,49 @@
                                 {% if post.vid2 != null %}
                                     {{ post.vid2 }}
                                 {% endif  %}
-                                <img src="img/portfolio/{{ post.img2 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                                <img src="img/portfolio/{{ post.img3 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                                <img src="img/portfolio/{{ post.img4 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                                <img src="img/portfolio/{{ post.img5 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                                <img src="img/portfolio/{{ post.img6 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                                
+                                {%if post.img2%}
+                                    {%if post.img2 contains '.gif'%}
+                                        <img src="img/portfolio/{{post.img2}}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                                    {%else%}
+                                        {% capture img_var %}img/portfolio/{{post.img2}}{% endcapture %}
+                                        <img src="{{ img_var | resize: '1000x1000>'}}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                                    {%endif%}
+                                {%endif%}
+                                {%if post.img3%}
+                                    {%if post.img3 contains '.gif'%}
+                                        <img src="img/portfolio/{{post.img3}}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                                    {%else%}
+                                        {% capture img_var %}img/portfolio/{{post.img3}}{% endcapture %}
+                                        <img src="{{ img_var | resize: '1000x1000>'}}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                                    {%endif%}
+                                {%endif%}
+                                {%if post.img4%}
+                                    {%if post.img4 contains '.gif'%}
+                                        <img src="img/portfolio/{{post.img4}}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                                    {%else%}
+                                        {% capture img_var %}img/portfolio/{{post.img4}}{% endcapture %}
+                                        <img src="{{ img_var | resize: '1000x1000>'}}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                                    {%endif%}
+                                {%endif%}
+                                {%if post.img5%}
+                                    {%if post.img5 contains '.gif'%}
+                                        <img src="img/portfolio/{{post.img5}}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                                    {%else%}
+                                        {% capture img_var %}img/portfolio/{{post.img5}}{% endcapture %}
+                                        <img src="{{ img_var | resize: '1000x1000>'}}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                                    {%endif%}
+                                {%endif%}
+                                {%if post.img6%}
+                                    {%if post.img6 contains '.gif'%}
+                                        <img src="img/portfolio/{{post.img6}}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                                    {%else%}
+                                        {% capture img_var %}img/portfolio/{{post.img6}}{% endcapture %}
+                                        <img src="{{ img_var | resize: '1000x1000>'}}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                                    {%endif%}
+                                {%endif%}
+                                
+
                                 <div class="skills">
                                     <div class="text-center">
                                         <h3>Skills Used</h3>
