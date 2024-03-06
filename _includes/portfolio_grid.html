@@ -18,7 +18,8 @@
                              </div>  -->
                              <!--toggle this for portfolio magnifying glass favion -->
                         </div>
-                        <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+                        {% capture img_var %}img/portfolio/{{post.img}}{% endcapture %}
+                        <img src="{{ img_var | resize: '800x800>'}}" class="img-responsive" alt="{{ post.alt }}">
                     </a>
                     <p><a href="#portfolioModal-{{ post.modal-id }}" data-toggle="modal" class="port_caption">{{ post.title }}</a></p>
                 </div>

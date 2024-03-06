@@ -2,7 +2,7 @@
 layout: default
 title: QUAD-STEPPER POWER BOARD WITH MONITORING
 category: portfolio
-modal-id: 24
+modal-id: 25
 vid1: null
 vid2: null
 img: Stepper_Board/board_pic.jpg
