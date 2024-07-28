@@ -4,7 +4,12 @@ title: Car Fender Replacement
 category: blog
 ---
 
-This week we swapped out the driver side fender that was previously damaged, with a good one that we purchased in Sacramento.
+<figure>
+    <img src="{{ 'img/blog/car_fender/pulled_bmw.jpg' | resize: '800x800>' }}" class="img-responsive img-centered" alt="{{ post.alt }}" style="margin-bottom: 5px">
+    <figcaption class="text-center">Pick-n-pull donor car's driver side fender was long gone when we got there :(</figcaption>
+</figure>
+
+This week we swapped out the driver side fender that was previously damaged, with a good one that we purchased in Sacramento. Our original plan was to pull a fender from an identical year and color e46 from the pick-n-pull in Richmond, but when we got there the fender was gone. It was on the way so we just proceeded to Sacramento to buy from the Ebay seller.
 
 <img src="{{ 'img/blog/car_fender/fender_out.jpg' | resize: '800x800>' }}" class="img-responsive img-centered" alt="{{ post.alt }}">
 
